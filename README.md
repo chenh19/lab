@@ -9,6 +9,7 @@
 - basic equipment using (pipttes: manual/eletronicl/multiple; centrifuges; waterbath; cell culture hood; vacuum)
 - [cell culturing](https://www.sigmaaldrich.com/technical-documents/protocols/biology/cell-types-culture.html) ([ATCC cell lines](https://www.atcc.org/en/Products/Cells_and_Microorganisms/Cell_Lines.aspx); [aseptic technique](https://www.thermofisher.com/us/en/home/references/gibco-cell-culture-basics.html), microscope, countess; culturing without antibiotics)
 - notes keeping and literature searching/managing ([PubMed](https://www.ncbi.nlm.nih.gov/pubmed/); [Mendeley](https://www.mendeley.com/))
+- weekly meeting with [Dr. Braunstein](http://www.braunstein.team/)
 
 #### basic genetic experiments
 - [DNA extraction](https://assets.thermofisher.com/TFS-Assets/LSG/manuals/purelink_genomic_man.pdf) (understand principles; from cell/blood/saliva)
