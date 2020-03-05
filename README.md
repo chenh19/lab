@@ -7,8 +7,8 @@
 #### lab basics
 - basic rules in the lab (safety, trash/sharp handling)
 - basic equipment using (pipttes: manual/eletronicl/multiple; centrifuges; waterbath; cell culture hood; vacuum)
-- cell culturing (aseptic technique, microscope, countess)
-- notes keeping and literature searching/managing (mendeley)
+- cell culturing (aseptic technique, microscope, countess; culturing without antibiotics)
+- notes keeping and literature searching/managing ([PubMed](https://www.ncbi.nlm.nih.gov/pubmed/); [Mendeley](https://www.mendeley.com/))
 
 #### basic genetic experiments
 - DNA extraction (understand principles; from cell/blood/saliva)
