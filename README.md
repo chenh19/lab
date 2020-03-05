@@ -15,7 +15,7 @@
 - PCR (understand principles; SnapGene for sequences managing and primer designing)
 
 ### basic cell experiments
-- Flowcytometry (cell prep; single staining; Calibur machine)
+- Flowcytometry (cell prep; single staining; Calibur machine using)
 - FlowJo (flow data managing, gating, analyzing MFI)
 
 
