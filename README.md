@@ -20,7 +20,7 @@
 
 
 ## Advanced
-*Each advanced steps takes around 3-4 weeks (one doesn't have to learn all, but should fully understand the principles of one set of experiments, and should always learn data analyzing and graphing)*
+*Each advanced steps takes around 3-4 weeks (one doesn't have to learn all, but should fully understand the principles of one set of the advanced experiments, and should always learn data analyzing and graphing)*
 
 #### advanced cell experiments
 - proliferation curve
@@ -42,7 +42,7 @@
 
 
 ## Project begins (after 3 months)
-The student should be proficient in at least one type of advanced experiments and able to conduct a small **downstream** project independently
+The student should be proficient in at least one set of the advanced experiments and able to conduct a small **downstream** project independently
 
 
 ## More advanced (after 1 year)
