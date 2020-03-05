@@ -42,7 +42,7 @@
 
 
 ## Project begins (after 3 months)
-The student should be proficient in at least one type of experiments and able to conduct a small **downstream** project independently
+The student should be proficient in at least one type of advanced experiments and able to conduct a small **downstream** project independently
 
 
 ## More advanced (after 1 year)
