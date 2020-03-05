@@ -16,7 +16,7 @@
 
 ### basic cell experiments
 - Flowcytometry (cell prep; single staining; Calibur machine using)
-- FlowJo (flow data managing, gating, analyzing MFI)
+- FlowJo (raw flow data managing, gating, analyzing MFI)
 
 
 ## Advanced
