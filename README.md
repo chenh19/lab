@@ -7,16 +7,16 @@
 #### lab basics
 - basic rules in the lab (safety, trash/sharp handling)
 - basic equipment using (pipttes: manual/eletronicl/multiple; centrifuges; waterbath; cell culture hood; vacuum)
-- cell culturing (aseptic technique, microscope, countess; culturing without antibiotics)
+- cell culturing ([aseptic technique](https://www.thermofisher.com/us/en/home/references/gibco-cell-culture-basics.html), microscope, countess; culturing without antibiotics)
 - notes keeping and literature searching/managing ([PubMed](https://www.ncbi.nlm.nih.gov/pubmed/); [Mendeley](https://www.mendeley.com/))
 
 #### basic genetic experiments
-- DNA extraction (understand principles; from cell/blood/saliva)
-- PCR (understand principles; SnapGene for sequences managing and primer designing)
+- [DNA extraction](https://assets.thermofisher.com/TFS-Assets/LSG/manuals/purelink_genomic_man.pdf) (understand principles; from cell/blood/saliva)
+- [PCR](https://www.thermofisher.com/us/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/pcr-education/pcr-reagents-enzymes/pcr-basics.html) (understand principles; SnapGene for sequences managing and primer designing)
 
 #### basic cell experiments
-- Flowcytometry (cell prep; single staining; Calibur machine using)
-- FlowJo (raw flow data managing, gating, analyzing MFI)
+- [Flowcytometry](https://www.abcam.com/protocols/introduction-to-flow-cytometry) (cell prep; single staining; Calibur machine using)
+- [FlowJo](https://www.flowjo.com/solutions/flowjo) (raw flow data managing, gating, analyzing MFI)
 
 
 ## Advanced
@@ -24,21 +24,20 @@
 
 #### advanced cell experiments
 - proliferation curve
-- viability test; mHAM
+- [viability test; mHAM](https://www.sigmaaldrich.com/technical-documents/protocols/biology/roche/cell-proliferation-reagent-wst-1.html)
 
 #### advanced genetic experiments
-- sanger sequencing
-- RT-PCR
-- qPCR
+- [Sanger sequencing](https://www.khanacademy.org/science/high-school-biology/hs-molecular-genetics/hs-biotechnology/a/dna-sequencing)
+- [qRT-PCR](https://www.thermofisher.com/us/en/home/references/ambion-tech-support/rtpcr-analysis/general-articles/rt--pcr-the-basics.html)
 
 #### advanced protein experiments
-- Elisa
-- Western blot
+- [Elisa](https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-elisa.html)
+- [Western blot](https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-western-blotting.html)
 
 #### data analyzing and graphing
-- FlowJo Layout
-- GraphPad prism
-- Adobe illustrator
+- [FlowJo](https://www.flowjo.com/solutions/flowjo) Layout
+- [GraphPad Prism](https://www.graphpad.com/scientific-software/prism/)
+- [Adobe illustrator](https://www.adobe.com/products/illustrator.html)
 
 
 ## Project begins (after 3 months)
