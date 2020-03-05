@@ -2,7 +2,7 @@
 *v1.0.0*
 
 ## Basics
-*Each basic steps uses around 2 weeks (assuming the student comes twice a week)*
+*Each basic steps takes around 2 weeks (assuming the student comes twice a week)*
 
 #### lab basics
 - basic rules in the lab (safety, trash/sharp handling)
@@ -20,7 +20,7 @@
 
 
 ## Advanced
-*Each advanced steps uses around 3-4 weeks (one doesn't have to learn all, but should always learn data analyzing and graphing)*
+*Each advanced steps takes around 3-4 weeks (one doesn't have to learn all, but should fully understand the principles of one set of experiments, and should always learn data analyzing and graphing)*
 
 #### advanced cell experiments
 - proliferation curve
