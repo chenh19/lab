@@ -45,6 +45,6 @@ The student should be proficient in at least one set of the advanced experiments
 
 
 ## More advanced (after 1 year)
-- genetic engineering and cell line generating pipeline
-- NGS pipeline
+- genetic engineering and cell line generating pipeline (Prime-CT-CRISPR system)
+- [NGS pipeline](https://github.com/chenh19/BRStudio)
 - other **upstream** projects
