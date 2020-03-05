@@ -7,7 +7,7 @@
 #### lab basics
 - basic rules in the lab (safety, trash/sharp handling)
 - basic equipment using (pipttes: manual/eletronicl/multiple; centrifuges; waterbath; cell culture hood; vacuum)
-- cell culturing ([aseptic technique](https://www.thermofisher.com/us/en/home/references/gibco-cell-culture-basics.html), microscope, countess; culturing without antibiotics)
+- [cell culturing](https://www.sigmaaldrich.com/technical-documents/protocols/biology/cell-types-culture.html) ([ATCC cell lines](https://www.atcc.org/en/Products/Cells_and_Microorganisms/Cell_Lines.aspx); [aseptic technique](https://www.thermofisher.com/us/en/home/references/gibco-cell-culture-basics.html), microscope, countess; culturing without antibiotics)
 - notes keeping and literature searching/managing ([PubMed](https://www.ncbi.nlm.nih.gov/pubmed/); [Mendeley](https://www.mendeley.com/))
 
 #### basic genetic experiments
@@ -35,7 +35,7 @@
 - [Western blot](https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-western-blotting.html)
 
 #### data analyzing and graphing
-- [FlowJo](https://www.flowjo.com/solutions/flowjo) Layout
+- [FlowJo](https://www.flowjo.com/solutions/flowjo)
 - [GraphPad Prism](https://www.graphpad.com/scientific-software/prism/)
 - [Adobe illustrator](https://www.adobe.com/products/illustrator.html)
 
