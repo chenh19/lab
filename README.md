@@ -20,7 +20,7 @@
 
 
 ## Advanced
-Each advanced steps uses around 3-4 weeks (one doesn't have to learn all, but should always learn data analyzing and graphing)
+*Each advanced steps uses around 3-4 weeks (one doesn't have to learn all, but should always learn data analyzing and graphing)*
 
 ### advanced cell experiments
 - proliferation curve
