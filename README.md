@@ -4,17 +4,17 @@
 ## Basics
 *Each basic steps uses around 2 weeks (assuming the student comes twice a week)*
 
-### lab basics
+#### lab basics
 - basic rules in the lab (safety, trash/sharp handling)
 - basic equipment using (pipttes: manual/eletronicl/multiple; centrifuges; waterbath; cell culture hood; vacuum)
 - cell culturing (aseptic technique, microscope, countess)
 - notes keeping and literature searching/managing (mendeley)
 
-### basic genetic experiments
+#### basic genetic experiments
 - DNA extraction (understand principles; from cell/blood/saliva)
 - PCR (understand principles; SnapGene for sequences managing and primer designing)
 
-### basic cell experiments
+#### basic cell experiments
 - Flowcytometry (cell prep; single staining; Calibur machine using)
 - FlowJo (raw flow data managing, gating, analyzing MFI)
 
@@ -22,20 +22,20 @@
 ## Advanced
 *Each advanced steps uses around 3-4 weeks (one doesn't have to learn all, but should always learn data analyzing and graphing)*
 
-### advanced cell experiments
+#### advanced cell experiments
 - proliferation curve
 - viability test; mHAM
 
-### advanced genetic experiments
+#### advanced genetic experiments
 - sanger sequencing
 - RT-PCR
 - qPCR
 
-### advanced protein experiments
+#### advanced protein experiments
 - Elisa
 - Western blot
 
-### data analyzing and graphing
+#### data analyzing and graphing
 - FlowJo Layout
 - GraphPad prism
 - Adobe illustrator
