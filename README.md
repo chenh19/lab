@@ -1,4 +1,5 @@
-#  Braunstein lab: Training plan for undergraduate students
+#  Undergraduate students training plan
+**An general training guideline for undergradtuate students in [Braunstein Lab](http://www.braunstein.team/)**
 *v1.0.0*
 
 ## Basics
