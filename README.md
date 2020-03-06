@@ -1,4 +1,4 @@
-# Training plan for undergraduate students - Braunstein lab
+#  Braunstein lab: Training plan for undergraduate students
 *v1.0.0*
 
 ## Basics
