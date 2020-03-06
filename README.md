@@ -1,4 +1,4 @@
-# Braunstein lab training pipeline for undergrad students
+# Training plan for undergraduate students - Braunstein lab
 *v1.0.0*
 
 ## Basics
