@@ -1,18 +1,18 @@
 # Fast medium-scale data processing with Excel
-When dealing with medium sized datasets (dozens or hundreds of entries), it can be awkward. On the one hand, it might not be worthwhile to specially learn and write an R script; on the other hand, it would be very tiresome to do the processing manually. I will introduce herein some handy tools that are perfect for this situation and can expedite the data processing.
+When dealing with medium sized datasets (dozens or hundreds of entries), it can be awkward. On the one hand, it might not be worthwhile to specially learn and write an R script for it; on the other hand, it would be very tiresome to do the processing manually. I will introduce herein some handy tools that are perfect for this situation and can expedite the data processing.
 
 
 ## Data trimming
-Always do data trimming first. In most cases, data doesn't come neat and uniform. Sometimes you might need to combine datasets that have different formatting, sometimes there might be a lot of blank cells or duplicates in a sheet. If the data is not trimmed first, you will very likely lose data entries during analyzing and you won't be able to trace back.
+Always do data trimming first. In most cases, data doesn't come neat and uniform. Sometimes you need to combine datasets that have different formatting, sometimes there might be a lot of blank cells or duplicates in a sheet. If the data is not trimmed first, you will very likely lose data entries during analyzing and you won't be able to trace back.
 
 ### 1. replace
-**replacing empty cells with N/A:**  
+**Replacing blank cells with "N/A":**  
 
-- Select the entire desired region manually (do not use Ctrl+A)  
+- Select the entire desired region manually (do not use Ctrl+A because you may miss some cells)  
 - Ctrl+H to bring up the "Find and Replace" window  
 ![](fig/1-1.png)
-- Find what: (leave blank)  
-- Replace with: N/A  
+> Find what: (leave blank)  
+> Replace with: N/A  
 - Replace All  
 ![](fig/1-2.png)
 
