@@ -87,7 +87,7 @@ Filtering is the most common and basic procedure to get your interested data ent
 - Go to Home > Conditional formatting > Highlight Cells Rules > Greater Than (select any color you like)  
 ![](fig/1-18.png)
 - Cut (Ctrl+X) the highlighted rows, paste (Ctrl+V) into a new sheet, annotate why they were filtered out  
-![](fig/1-10.png)
+![](fig/1-20.png)
 - You may need to delete the blank rows in the original sheet  
 - If you need to filter by another columns, repeat the whole process in this section  
 ![](fig/1-19.png)
