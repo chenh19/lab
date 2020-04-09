@@ -5,7 +5,7 @@ When dealing with medium sized datasets (dozens or hundreds of entries), it can 
 ## Data trimming
 Always do data trimming first. In most cases, data doesn't come neat and uniform. Sometimes you need to combine datasets that have different formatting, sometimes there might be a lot of blank cells or duplicates in a sheet. If the data is not trimmed first, you will very likely lose data entries during analyzing and you won't be able to trace back.
 
-### 1. replace
+### 1. Replace
 **Replacing blank cells with "N/A":**  
 
 - Select the entire desired region manually (do not use Ctrl+A because you may miss some cells)  
@@ -13,33 +13,37 @@ Always do data trimming first. In most cases, data doesn't come neat and uniform
 ![](fig/1-1.png)
 > Find what: (leave blank)  
 > Replace with: N/A  
-- Replace All  
+- Click "Replace All"  
 ![](fig/1-2.png)
 
-**uniforming format:**  
+**Uniforming format:**  
 
 - Select the entire column you want to adjust  
 - Ctrl+H to bring up the "Find and Replace" window  
 ![](fig/1-3.png)
-- Find what: Dx
-- Replace with: Disease
+> Find what: Dx  
+> Replace with: Disease  
+- Click "Replace All"  
 ![](fig/1-4.png)
 
-### 2. text to columns
+### 2. Text to columns
 - Insert a few blank columns after the column you want to split  
 ![](fig/1-5.png)
 - Select the column you want to split  
-- Data > Text to Columns  
+- Go to Data > Text to Columns  
 ![](fig/1-6.png)
 - If you want to split by symbols (e.g., " ", "/", "-", "_"), select Delimited; if you want to split by character count, select Fixed Width  
 ![](fig/1-7.png)
-- next and finish
+- Next and Finish
 ![](fig/1-8.png)
 
 
-### 3. concatenate()
+### 3. Concatenate columns
 - After the columns you want to combine, insert a blank column  
-- input something like this (you can use any delimiter you want, e.g., " ", "/", "-", "_"):  
+- Input something like this:  
+> you can use any delimiter you want, e.g., " ", "/", "-", "_"  
+> you can concatenate more than two columns, just use "," to separate the values  
+
 ![](fig/1-9.png)
 - autofill the column by dragging  
 ![](fig/1-10.png)
