@@ -47,7 +47,7 @@ The student should be proficient in at least one set of the advanced experiments
 
 
 ## More advanced (after 1 year)
-- Fast medium-scale data processing with Excel
+- [Fast medium-scale data processing with Excel](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md)
 - Genetic engineering and cell line generating pipeline (Prime-CT-CRISPR system)
 - [NGS library preparation](https://www.illumina.com/products/by-brand/ampliseq.html); [Fast large-scale data processing with R](https://github.com/chenh19/BRStudio)
 - In silico research (sturctural and functional predictions)
