@@ -47,8 +47,8 @@ The student should be proficient in at least one set of the advanced experiments
 
 
 ## More advanced (after 1 year)
-- excel skills for data organizing
+- medium sized dataset processing with Excel
 - genetic engineering and cell line generating pipeline (Prime-CT-CRISPR system)
-- [NGS pipeline](https://github.com/chenh19/BRStudio)
+- [NGS library preparation](https://www.illumina.com/products/by-brand/ampliseq.html), [large scale data processing with R](https://github.com/chenh19/BRStudio)
 - **training other students**
 - other **upstream** projects
