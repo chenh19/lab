@@ -42,95 +42,96 @@ Always do data trimming first. In most cases, data doesn't come neat and uniform
 - After the columns you want to combine, insert a blank column  
 - Input something like this:  
 > you can use any delimiter you want, e.g., " ", "/", "-", "_"  
-> you can concatenate more than two columns, just use "," to separate the values  
+> you may concatenate more than two columns, just use "," to separate the values  
 
 ![](fig/1-9.png)
-- autofill the column by dragging  
+- Autofill the column by dragging  
 ![](fig/1-10.png)
 
-### 4. remove duplicates (for manual removing, use highlight)
-**automatic:**  
+### 4. Remove duplicates (for manual removing, use highlight)
+**Automatic:**  
 
-- make sure you finished the "1. Replace" step   
+- Make sure you finished the "1. Replace" step   
 - Select the entire data region  
-- Data > Remove Duplicates  
+- Go to Data > Remove Duplicates  
 - Select only the column you want with unique values  
 ![](fig/1-12.png)
-- Next and finish  
+- Next and Finish  
 ![](fig/1-13.png)
 
-**semiautomatic:**  
+**Semiautomatic:**  
 
-- make sure you finished the "1. Replace" step   
+- Make sure you finished the "1. Replace" step   
 - Select the entire data region  
-- Home > Sort & Filter > Custom sort  
-- Sort by the column you want with unique values  
-- OK  
+- Go to Home > Sort & Filter > Custom Sort  
+- Sort the column you want with unique values  
+- Click "OK"  
 - Select only the column you want with unique values  
-- Home > Conditional formatting > Highlight Cells Rules > Duplicate values (select any color you like)  
+- Go to Home > Conditional formatting > Highlight Cells Rules > Duplicate values (select any color you like)  
 ![](fig/1-14.png)
-- manually remove the duplicates (sometimes you may need to merge info from two rows)  
+- Manually remove the duplicates (sometimes you may need to merge info from two rows)  
 ![](fig/1-15.png)
 ![](fig/1-16.png)
 
 ## Filtering
 Filtering is the most common and basic procedure to get your interested data entries. In Excel, there is a "Filter" function in the menu, but I personally prefer not to use it. The major reason is that I would like to keep all the filtered out entries in a separate sheet, so that I can always trace back.
 
-- make sure you finished the "1. Replace" step  
+- Make sure you finished the "1. Replace" step  
 - Select the entire data region  
-- Home > Sort & Filter > Custom sort  
+- Go to Home > Sort & Filter > Custom sort  
 - Sort by the column you want to filter by  
 ![](fig/1-17.png)
-- OK  
+- Click "OK"  
 - Select only the column you want to filter by  
-- Home > Conditional formatting > Highlight Cells Rules > Greater Than (select any color you like)  
+- Go to Home > Conditional formatting > Highlight Cells Rules > Greater Than (select any color you like)  
 ![](fig/1-18.png)
-- cut (Ctrl+X) the highlighted rows, paste into a new sheet, note why they are filtered out  
+- Cut (Ctrl+X) the highlighted rows, paste (Ctrl+V) into a new sheet, annotate why they were filtered out  
 ![](fig/1-10.png)
 - You may need to delete the blank rows in the original sheet  
-- If you need to filter by another columns, restart from custom sort  
+- If you need to filter by another columns, repeat the whole process in this section  
 ![](fig/1-19.png)
 
 ## Cross-reference
 This can be tricky and time consuming for most people, therefore I recommend the vlookup() function in Excel, which can automatically retrieve the related info if the keywords are matched. There is similar function called hlookup(), which works horizontally instead of vertically, but I personally have never used it.
 
-### 1. merge data
+### 1. Merge data
 
-- make sure you finished the "1. Replace" step   
-- prepare the data to be merged  
+- Make sure you finished the "1. Replace" step   
+- Prepare the data to be merged  
 ![](fig/1-21.png)
-- in the blank cell of your working sheet that you want to add value, click "fx", search for vlookup  
+- In the blank cell of your working sheet that you want to add value, click "fx", search for "vlookup"  
 ![](fig/1-22.png)
-- Click the input box of Lookup_value: select the keyword in both your working sheet and your reference sheet  
+- Click the input box of Lookup_value: select the keyword in both your working sheet (it should also exist in your reference sheet)  
 ![](fig/1-23.png)
 - Click the input box of Table_array: select the entire region of your reference dataset  
 - Click the input box of Col_index_num: put 1, 2, 3, etc. The column of the keyword in your reference sheet will be 1, the column after will 2, etc. You can put the number according to the info you want to retrieve  
 ![](fig/1-24.png)
-- Click the input box Range_lookoup: I always put FALSE  
-- OK  
+- Click the input box Range_lookoup: FALSE (I always put FALSE)  
+- Click "OK"  
 ![](fig/1-25.png)
-- If you want to retrieve multiple columns of values, you can just repeat the vlookup in the following columns  
-- select the cells with vlookup, autofill the columns by dragging  
+- If you want to retrieve multiple columns of values, you can just repeat the vlookup in the following cells of the same row  
+- Select all the cells with vlookup function, autofill the columns by dragging  
 ![](fig/1-26.png)
 
-### 2. check missing entries
+### 2. Check missing entries
 
-- make sure you finished the "1. Replace" step   
-- in the blank cell of your reference sheet, click "fx", search for vlookup  
-- Click the input box of Lookup_value: select the keyword in both your working sheet and your reference sheet  
-- Click the input box of Table_array: select the column of keywords in your working sheet  
+- Make sure you finished the "1. Replace" step   
+- In the blank cell of your reference sheet, click "fx", search for "vlookup"  
+- Click the input box of Lookup_value: select the keyword in your reference sheet (it should also exist in your working sheet)  
+- Click the input box of Table_array: select only the keyword column your working sheet  
 - Click the input box of Col_index_num: 1  
-- Click the input box Range_lookoup: I always put FALSE  
+- Click the input box Range_lookoup: FALSE (I always put FALSE)  
 ![](fig/1-27.png)
 - The "#N/A" are the missing entries in your working sheet  
 ![](fig/1-28.png)
 
-## data exporting
+## Data exporting
 
-**manual check:**  
+**Manual check:**  
 
-It's inevitable that you will have to do some manual check when all the above procedures are done. There might be a few "#N/A" in your working sheet that were not due to the processing procedures, but due to other factors, such as online database updating.
+It's inevitable that you will have to do some manual check when all the above procedures are finished. There might be a few "#N/A" in your working sheet that were not due to the processing procedures, but due to other factors, such as an update from an online database.  
 
-**paste as value before moving or exporting:**  
+**Paste as value before moving or exporting:**  
 
-To avoid the "#REF!" error, you may just copy everything and paste it as values in a new sheet.
+To avoid the "#REF!" error, you may just copy everything and paste it as values (note the Paste Options) in a new sheet.  
+
