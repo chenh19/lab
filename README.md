@@ -50,5 +50,6 @@ The student should be proficient in at least one set of the advanced experiments
 - Fast medium-scale data processing with Excel
 - Genetic engineering and cell line generating pipeline (Prime-CT-CRISPR system)
 - [NGS library preparation](https://www.illumina.com/products/by-brand/ampliseq.html); [Fast large-scale data processing with R](https://github.com/chenh19/BRStudio)
+- In silico research (sturctural and functional predictions)
 - **Training other students**
 - Other **upstream** projects
