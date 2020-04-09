@@ -1,6 +1,6 @@
 #  Undergraduate students training plan
 **A general training pipeline for undergradtuate students in [Braunstein Lab](http://www.braunstein.team/)**  
-*Current version: v1.0.0*
+*Current version: v1.0.1*
 
 ## Basics
 *Each basic steps takes around 2 weeks (assuming the student comes twice a week)*
