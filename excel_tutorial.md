@@ -2,10 +2,10 @@
 When dealing with medium sized datasets (dozens or hundreds of entries), it can be awkward. On the one hand, it might not be worthwhile to specially learn and write an R script for it; on the other hand, it would be very tiresome to do the processing manually. I will introduce herein some handy tools that are perfect for this situation and can expedite the data processing.
 
 
-## Data trimming
+## 1. Data trimming
 Always do data trimming first. In most cases, data doesn't come neat and uniform. Sometimes you need to combine datasets that have different formatting, sometimes there might be a lot of blank cells or duplicates in a sheet. If the data is not trimmed first, you will very likely lose data entries during analyzing and you won't be able to trace back.
 
-### 1. Replace
+### i. Replace
 **Replacing blank cells with "N/A":**  
 
 - Select the entire desired region manually (do not use Ctrl+A because you may miss some cells)  
@@ -26,7 +26,7 @@ Always do data trimming first. In most cases, data doesn't come neat and uniform
 - Click "Replace All"  
 ![](fig/1-4.png)
 
-### 2. Text to columns
+### ii. Text to columns
 - Insert a few blank columns after the column you want to split  
 ![](fig/1-5.png)
 - Select the column you want to split  
@@ -38,7 +38,7 @@ Always do data trimming first. In most cases, data doesn't come neat and uniform
 ![](fig/1-8.png)
 
 
-### 3. Concatenate columns
+### iii. Concatenate columns
 - After the columns you want to combine, insert a blank column  
 - Input something like this:  
 > you can use any delimiter you want, e.g., " ", "/", "-", "_"  
@@ -48,7 +48,7 @@ Always do data trimming first. In most cases, data doesn't come neat and uniform
 - Autofill the column by dragging  
 ![](fig/1-10.png)
 
-### 4. Remove duplicates (for manual removing, use highlight)
+### iv. Remove duplicates (for manual removing, use highlight)
 **Automatic:**  
 
 - Make sure you finished the "1. Replace" step   
@@ -73,7 +73,7 @@ Always do data trimming first. In most cases, data doesn't come neat and uniform
 ![](fig/1-15.png)
 ![](fig/1-16.png)
 
-## Filtering
+## 2. Filtering
 Filtering is the most common and basic procedure to get your interested data entries. In Excel, there is a "Filter" function in the menu, but I personally prefer not to use it. The major reason is that I would like to keep all the filtered out entries in a separate sheet, so that I can always trace back.
 
 - Make sure you finished the "1. Replace" step  
@@ -91,10 +91,10 @@ Filtering is the most common and basic procedure to get your interested data ent
 - If you need to filter by another columns, repeat the whole process in this section  
 ![](fig/1-19.png)
 
-## Cross-reference
+## 3. Cross-reference
 This can be tricky and time consuming for most people, therefore I recommend the vlookup() function in Excel, which can automatically retrieve the related info if the keywords are matched. There is similar function called hlookup(), which works horizontally instead of vertically, but I personally have never used it.
 
-### 1. Merge data
+### i. Merge data
 
 - Make sure you finished the "1. Replace" step   
 - Prepare the data to be merged  
@@ -113,7 +113,7 @@ This can be tricky and time consuming for most people, therefore I recommend the
 - Select all the cells with vlookup function, autofill the columns by dragging  
 ![](fig/1-26.png)
 
-### 2. Check missing entries
+### ii. Check missing entries
 
 - Make sure you finished the "1. Replace" step   
 - In the blank cell of your reference sheet, click "fx", search for "vlookup"  
@@ -125,7 +125,7 @@ This can be tricky and time consuming for most people, therefore I recommend the
 - The "#N/A" are the missing entries in your working sheet  
 ![](fig/1-28.png)
 
-## Data exporting
+## 4. Data exporting
 
 **Manual check:**  
 
