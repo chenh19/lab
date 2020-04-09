@@ -93,14 +93,21 @@ This can be tricky and time consuming for most people, therefore I recommend the
 ### 1. merge data
 
 - make sure you finished the "1. Replace" step   
+- prepare the data to be merged  
+![](fig/1-21.png)
 - in the blank cell of your working sheet that you want to add value, click "fx", search for vlookup  
+![](fig/1-22.png)
 - Click the input box of Lookup_value: select the keyword in both your working sheet and your reference sheet  
+![](fig/1-23.png)
 - Click the input box of Table_array: select the entire region of your reference dataset  
 - Click the input box of Col_index_num: put 1, 2, 3, etc. The column of the keyword in your reference sheet will be 1, the column after will 2, etc. You can put the number according to the info you want to retrieve  
+![](fig/1-24.png)
 - Click the input box Range_lookoup: I always put FALSE  
 - OK  
-- If you want to retrieve multiple columns of values, you can just repeat the vlookup  
+![](fig/1-25.png)
+- If you want to retrieve multiple columns of values, you can just repeat the vlookup in the following columns  
 - select the cells with vlookup, autofill the columns by dragging  
+![](fig/1-26.png)
 
 ### 2. check missing entries
 
@@ -110,7 +117,9 @@ This can be tricky and time consuming for most people, therefore I recommend the
 - Click the input box of Table_array: select the column of keywords in your working sheet  
 - Click the input box of Col_index_num: 1  
 - Click the input box Range_lookoup: I always put FALSE  
+![](fig/1-27.png)
 - The "#N/A" are the missing entries in your working sheet  
+![](fig/1-28.png)
 
 ## data exporting
 
