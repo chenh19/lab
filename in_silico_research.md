@@ -197,4 +197,4 @@ Sometimes, single amino acid changes may not cause drastic protein structural ch
 ![](fig/2-36.png)
 
 ## 7. Calculate odds ratio between variants and diseases
-Last but not least, you may calculate the [**Odds ratio**](https://www.wikiwand.com/en/Odds_ratio) to see the association between the variants and specific diseases.
+Last but not least, you may calculate the [**odds ratio**](https://www.wikiwand.com/en/Odds_ratio) to see the association between the variants and specific diseases.
