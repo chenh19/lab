@@ -4,7 +4,7 @@
 
 #### Table
 - [*1. Data trimming*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#1-data-trimming)
-- [*2. Filtering*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#2-data-filtering)
+- [*2. Data filtering*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#2-data-filtering)
 - [*3. Cross-reference*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#3-cross-reference)
 - [*4. Data exporting*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#4-data-exporting)
 
