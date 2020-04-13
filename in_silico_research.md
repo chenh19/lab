@@ -1,5 +1,5 @@
 # Preliminary *in silico* research for variants identified by NGS
-When you have filtered the variants from raw NGS data, you may find there are still too many of them and it's hard to decide which ones are more valuable for downstream experimental research. Therefore, you should do *in silico* research to get as much info about the variants as possible.  
+When you have filtered the variants from raw NGS data, you may find there are still too many of them and it's hard to decide which ones are more valuable for downstream experimental research. Therefore, you may do *in silico* research to get as much info about the variants as possible first.  
 *Current version: v1.0.0*
 
 #### Table
@@ -18,18 +18,18 @@ When you have filtered the variants from raw NGS data, you may find there are st
 
 
 ## 2. Check variants in the genome
-You may first check the variant location in human genome, which can give you the info about:  
+You may first check the variant location in the human genome, which can give you the info about:  
 
-- the context of the variant (exon/intron/sequence context), so that you can easily find the variant in the reference sequence of the gene
+- the context of the variants (exon/intron/sequence context), so that you can easily find the variants in the reference sequences of the genes
 - the NGS reads quality (variants at the end of amplicons are usually false, especially insertion or deletion; read depth; variant allele frequency)
-- the rsID for the variant
+- the rsID for the variants
 
 
 ### i. IGV
 [**Integrative Genomics Viewer (IGV)**](https://software.broadinstitute.org/software/igv/) for genome browsing  
 
-- IGV has both original desktop applications and a newer web application. Here I'm using desktop version as an example
-- To search for specific location in the genome, first open an IGV instance and select genome version, and then search by: ```chr:pos```(e.g., ```chr9:5073770```)
+- IGV has both desktop applications and a newer web application. Here I'm using desktop version as an example
+- To search for specific location in the genome, first open an IGV instance and select genome version, and then search by: ```chr:pos``` (e.g., ```chr9:5073770```)
 ![](fig/2-1.png)
  
 - If you have .bam files (along with .bai files in the same folder), you may directly open the .bam files with IGV and check the sequencing reads with the same way of searching
