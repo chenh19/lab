@@ -2,6 +2,14 @@
 When you have filtered the variants from raw NGS data, you may find there are still too many of them and it's hard to decide which ones are more valuable for downstream experimental research. Therefore, you should do *in silico* research to get as much info about the variants as possible.  
 *Current version: v1.0.0*
 
+#### Table
+- *Understand the basic variant info*
+- *Check variants in the genome*
+- *Retrieve more info from online databases*
+- *Predict variant deleteriousness*
+- *Predict protein modification site*
+- *Predict protein structural changes*
+- *Calculate odds ratio between variants and diseases*
 
 ## Understand the basic variant info
 - The most basic variant info contains four parameters: **chromosome**, **position**, **reference**, **alternative**. These four parameters may be separated or concatenated with delimiters.  
