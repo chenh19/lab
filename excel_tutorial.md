@@ -3,10 +3,10 @@
 *Current version: v1.0.0*  
 
 #### Table
-- [*Data trimming*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#1-data-trimming)
-- [*Data filtering*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#2-data-filtering)
-- [*Cross-reference*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#3-cross-reference)
-- [*Data exporting*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#4-data-exporting)
+1. [*Data trimming*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#1-data-trimming)
+2. [*Data filtering*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#2-data-filtering)
+3. [*Cross-reference*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#3-cross-reference)
+4. [*Data exporting*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#4-data-exporting)
 
 
 ## 1. Data trimming
