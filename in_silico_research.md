@@ -85,14 +85,14 @@ Once you have checked the quality and context of the variant, you can retrieve m
 - You may download the refseq for following steps
 ![](fig/2-12.png)
 
-[**NCBI PubMed**] for existing functional study (JAK2 V617F paper)
+[**NCBI PubMed**](https://www.ncbi.nlm.nih.gov/pubmed/) for existing functional study (JAK2 V617F paper)
 
 - You may search for previous research on the variants you are interested in
 - The most common search format is: ```gene amino_acid_change disease``` (e.g., ```JAK2 V617F Myeloproliferative Neoplasm```)
 ![](fig/2-13.png)
 
-### iii. Genecard
-[Genecard](https://www.genecards.org/) for gene summaries
+### iii. Genecards
+[Genecards](https://www.genecards.org/) for gene summaries
 
 - You can find summaries of genes and their related disease, which can be very useful in some cases
 ![](fig/2-14.png)
