@@ -25,7 +25,7 @@ You may first check the variant location in human genome, which can give you the
 - the rsID for the variant
 
 
-### 1. IGV
+### i. IGV
 [**Integrative Genomics Viewer (IGV)**](https://software.broadinstitute.org/software/igv/) for genome browsing  
 
 - IGV has both original desktop applications and a newer web application. Here I'm using desktop version as an example
@@ -36,7 +36,7 @@ You may first check the variant location in human genome, which can give you the
 ![](fig/2-2.png)
 
 
-### 2. NCBI variation viewer
+### ii. NCBI variation viewer
 [**NCBI variation viewer**](https://www.ncbi.nlm.nih.gov/variation/view/) for genome browsing 
 
 - NCBI variation viewer is an online genome visualizing tool integrated with more variant info
@@ -49,7 +49,7 @@ You may first check the variant location in human genome, which can give you the
 ## 3. Retrieve more info from online databases
 Once you have checked the quality and context of the variant, you can retrieve more variant-related info from online databases
 
-### 1. GnomAD
+### i. GnomAD
 - [GnomAD](https://gnomad.broadinstitute.org/) is an extensive and trusted database, we use it for raw variant data annotating
 - GnomAD has two versions, v2.1.1 is equal to GRCh37/hg19, while v3 is equal to GRCh38, make sure you select the right version before searching  
 - In GnomAD, you may search for gene names and then search for special variants. You may also use the "Export to CSV" function to make variant reference for the genes that you are interested in
@@ -64,7 +64,7 @@ Once you have checked the quality and context of the variant, you can retrieve m
 - In References section, the info we use most is the rsID from dbSNP. Also, the rsID is hyperlinked to the NCBI SNP page, where you can find more details of the consequences and changes of the variants
 
 
-### 2. NCBI
+### ii. NCBI
 [**NCBI SNP**](https://www.ncbi.nlm.nih.gov/snp/)
 
 - Search by ```rsID``` (e.g., ```rs77375493```)
@@ -91,26 +91,26 @@ Once you have checked the quality and context of the variant, you can retrieve m
 - The most common search format is: ```gene amino_acid_change disease``` (e.g., ```JAK2 V617F Myeloproliferative Neoplasm```)
 ![](fig/2-13.png)
 
-### 3. Genecard
+### iii. Genecard
 [Genecard](https://www.genecards.org/) for gene summaries
 
 - You can find summaries of genes and their related disease, which can be very useful in some cases
 ![](fig/2-14.png)
 
-### 4. Uniprot
+### iv. Uniprot
 [Uniprot](https://www.uniprot.org/) for protein info
 
 - Uniprot is a protein database where you can find details of the gene products, including protein functions, domains, active sites, isoforms, diseases, interacting proteins, subcellular locations, etc.
 - You may check whether the variants are or close to active sites
 - You may also check which domains or regions the variants are located in, which may give you some hints of the functional results of the variants
 
-### 5. PDB
+### v. PDB
 [PDB](https://www.rcsb.org/) for protein structures
 
 - PDB is a protein structure database, if your interested proteins have been structurally determined by previous study, you may utilize the structure models to see the 3D location of the variants and may use them as templates to do structural changes prediction
 ![](fig/2-15.png)
 
-### 6. Hotspots
+### vi. Hotspots
 [3D Hotspots](https://www.3dhotspots.org/)  
 ![](fig/2-16.png)
 [Cancer Hotspots](https://www.cancerhotspots.org/)  
@@ -163,7 +163,7 @@ Post-translational modifications are important for protein property, structure a
 ## 6. Predict protein structural changes
 Predict the structures of proteins with variants and compare them with wild type structures.
 
-### I-TASSER prediction
+### i. I-TASSER prediction
 
 [I-TASSER server](https://zhanglab.ccmb.med.umich.edu/I-TASSER/)
 
@@ -172,7 +172,7 @@ Predict the structures of proteins with variants and compare them with wild type
 
 - output: also PDB files
 
-### PyMol visualizing
+### ii. PyMol visualizing
 PyMol is a useful desktop application for protein structure visualization. You may [download it here](https://pymol.org/2/)  
 
 - You may also need to download the [free educational license](https://pymol.org/edu/?q=educational)  
