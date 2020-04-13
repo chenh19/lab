@@ -71,23 +71,23 @@ Once you have checked the quality and context of the variant, you may retrieve m
 ![](fig/2-8.png)
 - You may first check if the Alleles are correct. In some cases, you may be directed to a SNP page according to the location of the variant, but the allele change is actually novel and not available in the database. You may consider this to be a novel variant
 ![](fig/2-9.png)
-- In Genomic Placements section, you can find the positions of the same variant in different genomic reference sequences
+- In the Genomic Placements section, you can find the positions of the same variant in different genomic reference sequences
 ![](fig/2-10.png)
-- In Gene section, you can see the consequences and changes of the same variant varying in different RNA and protein isoforms. If you use GnomAD as variant reference library to annotate the variants, you'll find that GnomAD always use canonical sequences for genes. In many cases, the canonical sequences are not necessarily the most prevalent or relevant sequences, and you'll need to do some extra work to determine the isoforms you want to study. Once the isoforms are determined, you can get the actual RNA or protein changes in the Gene section
+- In the Gene section, you can see the consequences and changes of the same variant varying in different mRNA and protein isoforms. If you use GnomAD as the variant reference library for annotating, you'll find that GnomAD always use the canonical sequences for genes. In many cases, the canonical sequences are not necessarily the most prevalent or relevant sequences, and you'll need to do some extra work to determine which isoforms you want to study. Once the isoforms are confirmed, you can get the accurate mRNA or protein changes
 
-[**NCBI Nucleotide**](https://www.ncbi.nlm.nih.gov/nucleotide/) for RNA refseq
+[**NCBI Nucleotide**](https://www.ncbi.nlm.nih.gov/nucleotide/) for RefSeq
 
-- The most common sequences we use for genes are mRNA sequences
-- You may search refseq by ```gene homo sapiens```, and then select mRNA on the left
+- The most common sequences we use for genes are the mRNA sequences
+- You may search for RefSeqs by ```gene homo sapiens```. Do remember to select mRNA on the left
 ![](fig/2-11.png)
-- There might be multiple refseqs, select the one refseqs for your interested isoforms
-- There might also be multiple refseqs for the same isofroms from different accessions, I would suggest select the ones with refseq starting with "NM_" ([difference between XM_ and NM_](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between))  
-- You may download the refseq for following steps
+- There might be multiple RefSeqs, select the ones for your interested isoforms
+- There might also be multiple RefSeqs for the same isofroms from different accessions, I would suggest selecting the ones with refseq starting with "NM_" ([difference between XM_ and NM_](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between))  
+- You may download the sequences for following steps
 ![](fig/2-12.png)
 
-[**NCBI PubMed**](https://www.ncbi.nlm.nih.gov/pubmed/) for existing functional study (JAK2 V617F paper)
+[**NCBI PubMed**](https://www.ncbi.nlm.nih.gov/pubmed/) for existing functional study
 
-- You may search for previous research on the variants you are interested in
+- You may search for previous research on the variants that you are interested in
 - The most common search format is: ```gene amino_acid_change disease``` (e.g., ```JAK2 V617F Myeloproliferative Neoplasm```)
 ![](fig/2-13.png)
 
