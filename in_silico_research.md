@@ -82,10 +82,10 @@ Once you have checked the quality and context of the variant, you may retrieve m
 ![](fig/2-11.png)
 - There might be multiple RefSeqs, select the ones for your interested isoforms
 - There might also be multiple RefSeqs for the same isofroms from different accessions, I would suggest selecting the ones with refseq starting with "NM_" ([difference between XM_ and NM_](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between))  
-- You may download the sequences for following steps
+- You may download the sequences for the following steps
 ![](fig/2-12.png)
 
-[**NCBI PubMed**](https://www.ncbi.nlm.nih.gov/pubmed/) for existing functional study
+[**NCBI PubMed**](https://www.ncbi.nlm.nih.gov/pubmed/) for existing functional studies
 
 - You may search for previous research on the variants that you are interested in
 - The most common search format is: ```gene amino_acid_change disease``` (e.g., ```JAK2 V617F Myeloproliferative Neoplasm```)
@@ -94,20 +94,20 @@ Once you have checked the quality and context of the variant, you may retrieve m
 ### iii. Genecards
 [Genecards](https://www.genecards.org/) for gene summaries
 
-- You can find summaries of genes and their related disease, which can be very useful in some cases
+- You can find summaries of genes, including the related diseases, which can be very useful in some cases
 ![](fig/2-14.png)
 
 ### iv. Uniprot
-[Uniprot](https://www.uniprot.org/) for protein info
+[UniProt](https://www.uniprot.org/) for protein info
 
-- Uniprot is a protein database where you can find details of the gene products, including protein functions, domains, active sites, isoforms, diseases, interacting proteins, subcellular locations, etc.
+- UniProt is a protein database where you can find details of the gene products, including protein functions, domains, active sites, isoforms, diseases, interacting proteins, subcellular locations, etc.
 - You may check whether the variants are or close to active sites
 - You may also check which domains or regions the variants are located in, which may give you some hints of the functional results of the variants
 
 ### v. PDB
 [PDB](https://www.rcsb.org/) for protein structures
 
-- PDB is a protein structure database, if your interested proteins have been structurally determined by previous study, you may utilize the structure models to see the 3D location of the variants and may use them as templates to do structural changes prediction
+- PDB is a protein structure database, if your interested proteins have been structurally determined by previous studies, you may utilize the structure models to see the 3D location of the mutated residues and may use them as templates to do structural change predictions
 ![](fig/2-15.png)
 
 ### vi. Hotspots
@@ -122,27 +122,27 @@ Once you have checked the quality and context of the variant, you may retrieve m
 ## 4. Predict variant deleteriousness
 Although you can find varaint deleteriousness in online databases like GnomAD, you may still want to do the prediction manually sometimes. There are many prediction tools with different algorithms (based on conservation, structure, etc.) available online. The table 2 in this paper has well summarized these tools: [DOI:10.1038/gim.2015.30](https://doi.org/10.1038/gim.2015.30). The most common tools we use are PROVEAN and PolyPhen, here I'll show how to do predictions with them. Other prediction tools should function in a very similar way.  
 
-Your priority should be protein predictions, if protein prediction is not applicable, such as splice varaints, you can do genome prediction instead.  
+Your priority should always be protein prediction, if protein prediction is not applicable, such as splice varaints, you can do genome prediction instead.  
 
-[Provean Protein](http://provean.jcvi.org/protein_batch_submit.php?species=human)
+[**Provean Protein**](http://provean.jcvi.org/protein_batch_submit.php?species=human)
 
-- input
+- Input
 ![](fig/2-18.png)
-- output
+- Output
 ![](fig/2-19.png)
 
-[Provean Genome](http://provean.jcvi.org/genome_submit_2.php?species=human)
+[**Provean Genome**](http://provean.jcvi.org/genome_submit_2.php?species=human)
 
-- input
+- Input
 ![](fig/2-20.png)
-- output
+- Output
 ![](fig/2-21.png)
 
-[PolyPhen](http://genetics.bwh.harvard.edu/pph2/bgi.shtml)
+[**PolyPhen**](http://genetics.bwh.harvard.edu/pph2/bgi.shtml)
 
-- input
+- Input
 ![](fig/2-22.png)
-- output
+- Output
 ![](fig/2-23.png)
 
 
