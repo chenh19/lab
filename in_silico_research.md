@@ -11,13 +11,13 @@ When you have filtered the variants from raw NGS data, you may find there are st
 6. [*Predict protein structural changes*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#predict-protein-structural-changes)
 7. [*Calculate odds ratio between variants and diseases*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#calculate-odds-ratio-between-variants-and-diseases)
 
-## Understand the basic variant info
+## 1. Understand the basic variant info
 - The most basic variant info contains four parameters: **chromosome**, **position**, **reference**, **alternative**. These four parameters may be separated or concatenated with delimiters.  
 - Here is a variant example, ```chr9-5073770-G-T```, which means this variant is located at the 5073770th nucleotide of chromosome 9, and the change is from guanine (G) to thymine (T).  
 - One thing to note here is that the **position** may vary according to your [reference genome](https://en.wikipedia.org/wiki/Reference_genome), so please double check which one was used when these variants were being processed: **GRCh37/hg19** or **GRCh38**.  
 
 
-## Check variants in the genome
+## 2. Check variants in the genome
 You may first check the variant location in human genome, which can give you the info about:  
 
 - the context of the variant (exon/intron/sequence context), so that you can easily find the variant in the reference sequence of the gene
@@ -46,7 +46,7 @@ You may first check the variant location in human genome, which can give you the
 - In some cases, rsID may not be automatically annotated for variants, which may require manual checking for rsID by this way
 
 
-## Retrieve more info from online databases
+## 3. Retrieve more info from online databases
 Once you have checked the quality and context of the variant, you can retrieve more variant-related info from online databases
 
 ### 1. GnomAD
@@ -119,7 +119,7 @@ Once you have checked the quality and context of the variant, you can retrieve m
 - Some variants may happen at hotspots, which may give you some extra info of the variants
 
 
-## Predict variant deleteriousness
+## 4. Predict variant deleteriousness
 Although you can find varaint deleteriousness in online databases like GnomAD, you may still want to do the prediction manually sometimes. There are many prediction tools with different algorithms (based on conservation, structure, etc.) available online. The table 2 in this paper has well summarized these tools: [DOI:10.1038/gim.2015.30](https://doi.org/10.1038/gim.2015.30). The most common tools we use are PROVEAN and PolyPhen, here I'll show how to do predictions with them. Other prediction tools should function in a very similar way.  
 
 Your priority should be protein predictions, if protein prediction is not applicable, such as splice varaints, you can do genome prediction instead.  
@@ -146,7 +146,7 @@ Your priority should be protein predictions, if protein prediction is not applic
 ![](fig/2-23.png)
 
 
-## Predict protein modification site
+## 5. Predict protein modification site
 Post-translational modifications are important for protein property, structure and function. There are many prediction tools available online: [ExPASy](https://www.expasy.org/tools/#ptm), [DTU bioinfo](http://www.cbs.dtu.dk/databases/PTMpredictions/). Here I'll use phosphorylation prediction as an example. Other prediction tools should function in a very similar way.  
 
 [NetPhos](http://www.cbs.dtu.dk/services/NetPhos/)
@@ -160,7 +160,7 @@ Post-translational modifications are important for protein property, structure a
 ![](fig/2-26.png)
 
 
-## Predict protein structural changes
+## 6. Predict protein structural changes
 Predict the structures of proteins with variants and compare them with wild type structures.
 
 ### I-TASSER prediction
@@ -195,7 +195,7 @@ PyMol is a useful desktop application for protein structure visualization. You m
 Sometimes, single amino acid changes may not cause drastic protein structure changes. In that case, you may look into the proximal residues of the mutated sites.  
 ![](fig/2-36.png)
 
-## Calculate odds ratio between variants and diseases
+## 7. Calculate odds ratio between variants and diseases
 to see the association between the variants and specific diseases
 
 [Odds ratio](https://www.wikiwand.com/en/Odds_ratio)
