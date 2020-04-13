@@ -91,13 +91,13 @@ Once you have checked the quality and context of the variant, you may retrieve m
 - The most common search format is: ```gene amino_acid_change disease``` (e.g., ```JAK2 V617F Myeloproliferative Neoplasm```)
 ![](fig/2-13.png)
 
-### iii. Genecards
-[**Genecards**](https://www.genecards.org/) for gene summaries
+### iii. GeneCards
+[**GeneCards**](https://www.genecards.org/) for gene summaries
 
 - You can find summaries of genes, including the related diseases, which can be very useful in some cases
 ![](fig/2-14.png)
 
-### iv. Uniprot
+### iv. UniProt
 [**UniProt**](https://www.uniprot.org/) for protein info
 
 - UniProt is a protein database where you can find details of the gene products, including protein functions, domains, active sites, isoforms, diseases, interacting proteins, subcellular locations, etc.  
