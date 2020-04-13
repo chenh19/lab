@@ -50,7 +50,7 @@ You may first check the variant location in the human genome, which can give you
 Once you have checked the quality and context of the variant, you may retrieve more variant-related info from online databases
 
 ### i. GnomAD
-- [GnomAD](https://gnomad.broadinstitute.org/) is an extensive and trusted database, we use it for raw variant data annotating
+- [**GnomAD**](https://gnomad.broadinstitute.org/) is an extensive and trusted database, we use it for raw variant data annotating
 - GnomAD has two versions, v2.1.1 is equal to GRCh37/hg19, while v3 is equal to GRCh38, make sure you select the right version before searching  
 - In GnomAD, you may search for gene names and then search for special variants. You may also use the "Export to CSV" function to make variant reference libraries for the genes that you are interested in
 ![](fig/2-4.png)
@@ -92,28 +92,28 @@ Once you have checked the quality and context of the variant, you may retrieve m
 ![](fig/2-13.png)
 
 ### iii. Genecards
-[Genecards](https://www.genecards.org/) for gene summaries
+[**Genecards**](https://www.genecards.org/) for gene summaries
 
 - You can find summaries of genes, including the related diseases, which can be very useful in some cases
 ![](fig/2-14.png)
 
 ### iv. Uniprot
-[UniProt](https://www.uniprot.org/) for protein info
+[**UniProt**](https://www.uniprot.org/) for protein info
 
 - UniProt is a protein database where you can find details of the gene products, including protein functions, domains, active sites, isoforms, diseases, interacting proteins, subcellular locations, etc.
 - You may check whether the variants are or close to active sites
 - You may also check which domains or regions the variants are located in, which may give you some hints of the functional results of the variants
 
 ### v. PDB
-[PDB](https://www.rcsb.org/) for protein structures
+[**PDB**](https://www.rcsb.org/) for protein structures
 
 - PDB is a protein structure database, if your interested proteins have been structurally determined by previous studies, you may utilize the structure models to see the 3D location of the mutated residues and may use them as templates to do structural change predictions
 ![](fig/2-15.png)
 
 ### vi. Hotspots
-[3D Hotspots](https://www.3dhotspots.org/)  
+[**3D Hotspots**](https://www.3dhotspots.org/)  
 ![](fig/2-16.png)
-[Cancer Hotspots](https://www.cancerhotspots.org/)  
+[**Cancer Hotspots**](https://www.cancerhotspots.org/)  
 ![](fig/2-17.png)
 
 - Some variants may happen at hotspots, which may give you some extra info of the variants
@@ -149,7 +149,7 @@ Your priority should always be protein prediction, if protein prediction is not 
 ## 5. Predict protein modification site
 Post-translational modifications are important for protein property, structure and function. There are many prediction tools available online: [ExPASy](https://www.expasy.org/tools/#ptm), [DTU bioinfo](http://www.cbs.dtu.dk/databases/PTMpredictions/). Here I'll use phosphorylation prediction as an example. Other prediction tools should function in a very similar way.  
 
-[NetPhos](http://www.cbs.dtu.dk/services/NetPhos/)
+[**NetPhos server**](http://www.cbs.dtu.dk/services/NetPhos/)
 
 - Put in your sequence ([fasta format](https://en.wikipedia.org/wiki/FASTA_format))  
 ![](fig/2-24.png)
@@ -165,7 +165,7 @@ Predict the structures of proteins with variants and compare them with wild type
 
 ### i. I-TASSER prediction
 
-[I-TASSER server](https://zhanglab.ccmb.med.umich.edu/I-TASSER/)
+[**I-TASSER server**](https://zhanglab.ccmb.med.umich.edu/I-TASSER/)
 
 - input
 ![](fig/2-27.png)
@@ -173,7 +173,7 @@ Predict the structures of proteins with variants and compare them with wild type
 - output: also PDB files
 
 ### ii. PyMol visualizing
-PyMol is a useful desktop application for protein structure visualization. You may [download it here](https://pymol.org/2/)  
+**PyMol** is a useful desktop application for protein structure visualization. You may [download it here](https://pymol.org/2/)  
 
 - You may also need to download the [free educational license](https://pymol.org/edu/?q=educational)  
 - You can use PyMol in a very intuitive way using mouse ([a quick tutorial](https://pymol.org/dokuwiki/doku.php?id=mouse:two_button))
@@ -196,7 +196,7 @@ Sometimes, single amino acid changes may not cause drastic protein structure cha
 ![](fig/2-36.png)
 
 ## 7. Calculate odds ratio between variants and diseases
-to see the association between the variants and specific diseases
+To see the association between the variants and specific diseases
 
-[Odds ratio](https://www.wikiwand.com/en/Odds_ratio)
+[**Odds ratio**](https://www.wikiwand.com/en/Odds_ratio)
 
