@@ -1,6 +1,6 @@
 #  Undergraduate students training plan
 **A general training pipeline for undergradtuate students in [Braunstein Lab](http://www.braunstein.team/)**  
-*Current version: v1.0.1*
+*Current version: v1.0.2*
 
 ## Basics
 *Each basic steps takes around 2 weeks (assuming the student comes twice a week)*
@@ -50,6 +50,6 @@ The student should be proficient in at least one set of the advanced experiments
 - [Fast medium-scale data processing with Excel](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md)
 - Genetic engineering and cell line generating pipeline (Prime-CT-CRISPR system)
 - [NGS library preparation](https://www.illumina.com/products/by-brand/ampliseq.html); [Fast large-scale data processing with R](https://github.com/chenh19/BRStudio)
-- In silico research (sturctural and functional predictions)
+- [In silico research (sturctural and functional predictions)](https://github.com/chenh19/lab_training/blob/master/preliminary_in_silico_research.md)
 - **Training other students**
 - Other **upstream** projects
