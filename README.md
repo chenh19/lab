@@ -50,7 +50,7 @@ The student should be proficient in at least one set of the advanced experiments
 - [NGS library preparation](https://www.illumina.com/products/by-brand/ampliseq.html)
 - [Fast medium-scale data processing with Excel](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md)
 - [Fast large-scale data processing with BRStudio](https://github.com/chenh19/BRStudio)
-- [Preliminary *in silico* research (sturctural and functional predictions)](https://github.com/chenh19/lab_training/blob/master/preliminary_in_silico_research.md)
+- [Preliminary *in silico* research (sturctural and functional predictions)](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md)
 - Genetic engineering and cell line generating pipeline (Prime-CT-CRISPR system)
 - **Training other students**
 - Other **upstream** projects
