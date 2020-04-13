@@ -185,18 +185,16 @@ Predict the structures of proteins with variants and compare them with wild type
 ![](fig/2-30.png)
 ![](fig/2-31.png)
 
-- You may want to export the current view as an image, here is what I usually do using command lines: ```ray pixel,pixel```,  ```png filename```(e.g., ```ray 2000,2000```,  ```png export-1```), the exported file will be in the same folder as your PDB files
+- You may want to export the current view as an image, here is what I usually do using command lines: ```ray pixel,pixel```,  ```png filename``` (e.g., ```ray 2000,2000```,  ```png export-1```), the exported file will be in the same folder as your PDB files
 ![](fig/2-32.png)
 ![](fig/2-33.png)
 
-- Once you receive the prediction results from I-TASSER, you may want to compare the structural difference between the predicted ones and the original (wild type) ones, here is what I usually do using command lines: ```align A, B```(e.g., align NANS_WT,NANS_Variant)
+- Once you've received the prediction results from I-TASSER server, you may want to compare the structural difference between the predicted ones and the original (wild type) ones, here is what I usually do using command lines: ```align A, B``` (e.g., ```align NANS_WT,NANS_Variant```)
 ![](fig/2-34.png)
 ![](fig/2-35.png)
-Sometimes, single amino acid changes may not cause drastic protein structure changes. In that case, you may look into the proximal residues of the mutated sites.  
+
+Sometimes, single amino acid changes may not cause drastic protein structural changes. In that case, you may look into the proximal residues of the mutated residues and try to find potential linkages.  
 ![](fig/2-36.png)
 
 ## 7. Calculate odds ratio between variants and diseases
-To see the association between the variants and specific diseases
-
-[**Odds ratio**](https://www.wikiwand.com/en/Odds_ratio)
-
+Last but not least, you may calculate the [**Odds ratio**](https://www.wikiwand.com/en/Odds_ratio) to see the association between the variants and specific diseases.
