@@ -3,13 +3,13 @@ When you have filtered the variants from raw NGS data, you may find there are st
 *Current version: v1.0.0*
 
 #### Table
-- [*Understand the basic variant info*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#understand-the-basic-variant-info)
-- [*Check variants in the genome*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#check-variants-in-the-genome)
-- [*Retrieve more info from online databases*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#retrieve-more-info-from-online-databases)
-- [*Predict variant deleteriousness*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#predict-variant-deleteriousness)
-- [*Predict protein modification site*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#predict-protein-modification-site)
-- [*Predict protein structural changes*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#predict-protein-structural-changes)
-- [*Calculate odds ratio between variants and diseases*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#calculate-odds-ratio-between-variants-and-diseases)
+1. [*Understand the basic variant info*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#understand-the-basic-variant-info)
+2. [*Check variants in the genome*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#check-variants-in-the-genome)
+3. [*Retrieve more info from online databases*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#retrieve-more-info-from-online-databases)
+4. [*Predict variant deleteriousness*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#predict-variant-deleteriousness)
+5. [*Predict protein modification site*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#predict-protein-modification-site)
+6. [*Predict protein structural changes*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#predict-protein-structural-changes)
+7. [*Calculate odds ratio between variants and diseases*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#calculate-odds-ratio-between-variants-and-diseases)
 
 ## Understand the basic variant info
 - The most basic variant info contains four parameters: **chromosome**, **position**, **reference**, **alternative**. These four parameters may be separated or concatenated with delimiters.  
