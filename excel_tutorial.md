@@ -2,6 +2,12 @@
 **When dealing with medium sized datasets (dozens or hundreds of entries), it can be awkward. On the one hand, it might not be worthwhile to specially learn and write an R script for it; on the other hand, it would be very tiresome to do the processing manually. I will introduce herein some handy tools that are perfect for this situation and can expedite the data processing.**  
 *Current version: v1.0.0*  
 
+#### Table
+- 1. Data trimming
+- 2. Filtering
+- 3. Cross-reference
+- 4. Data exporting
+
 
 ## 1. Data trimming
 Always do data trimming first. In most cases, data doesn't come neat and uniform. Sometimes you need to combine datasets that have different formatting, sometimes there might be a lot of blank cells or duplicates in a sheet. If the data is not trimmed first, you will very likely lose data entries during analyzing and you won't be able to trace back.
@@ -74,7 +80,7 @@ Always do data trimming first. In most cases, data doesn't come neat and uniform
 ![](fig/1-15.png)
 ![](fig/1-16.png)
 
-## 2. Filtering
+## 2. Data filtering
 Filtering is the most common and basic procedure to get your interested data entries. In Excel, there is a "Filter" function in the menu, but I personally prefer not to use it. The major reason is that I would like to keep all the filtered out entries in a separate sheet, so that I can always trace back.
 
 - Make sure you finished the "1. Replace" step  
