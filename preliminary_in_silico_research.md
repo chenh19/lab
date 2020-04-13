@@ -103,6 +103,8 @@ Once you have checked the quality and context of the variant, you can retrieve m
 ## Predict variant deleteriousness
 Although you can find varaint deleteriousness in online databases like GnomAD, you may still want to do the prediction manually sometimes. There are many prediction tools with different algorithms (based on conservation, structure, etc.) available online. The table 2 in this paper has well summarized these tools: [DOI:10.1038/gim.2015.30](https://doi.org/10.1038/gim.2015.30). The most common tools we use are PROVEAN and PolyPhen, here I'll show how to do predictions with them. Other prediction tools should function in a very similar way.  
 
+Your priority should be protein predictions, if protein prediction is not applicable, such as splice varaints, you can do genome prediction instead.  
+
 [Provean Protein](http://provean.jcvi.org/protein_batch_submit.php?species=human)
 
 - input
