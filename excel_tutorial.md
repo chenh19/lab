@@ -3,7 +3,7 @@
 *Current version: v1.0.0*  
 
 #### Table
-- 1. Data trimming
+- [*1. Data trimming*](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md#1-data-trimming)
 - 2. Filtering
 - 3. Cross-reference
 - 4. Data exporting
