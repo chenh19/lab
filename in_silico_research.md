@@ -108,7 +108,7 @@ Once you have checked the quality and context of the variant, you may retrieve m
 ![](fig/2-41.png)
 
 - You may check whether the variants are at or close to the active sites
-- You may also check which specific domains or regions the mutated residues are located in, which may give you some hints of the functional results of the variants
+- You may also check which specific domains or regions the mutated residues are located in, and it may give you some hints of the functional results of the variants
 
 ### v. PDB
 [**PDB**](https://www.rcsb.org/) for protein structures
