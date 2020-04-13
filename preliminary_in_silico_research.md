@@ -159,6 +159,7 @@ Render 3D model: ray 2000, 2000
 Export image: png filename
 ```
 
+Sometimes, single amino acid changes may not cause drastic protein structure changes. In that case, you may look into the proximal residues of the mutated sites.  
 
 ## Calculate odds ratio between variants and diseases
 to see the association between the variants and specific diseases
