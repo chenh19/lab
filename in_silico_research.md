@@ -151,7 +151,7 @@ Post-translational modifications are important for protein property, structure a
 
 [**NetPhos server**](http://www.cbs.dtu.dk/services/NetPhos/)
 
-- Put in your sequence ([fasta format](https://en.wikipedia.org/wiki/FASTA_format))  
+- Put in your sequence ([FASTA format](https://en.wikipedia.org/wiki/FASTA_format))  
 ![](fig/2-24.png)
 - Set parameters according to the guidance provided by with the tool
 ![](fig/2-25.png)
@@ -167,13 +167,13 @@ Predict the structures of proteins with variants and compare them with wild type
 
 [**I-TASSER server**](https://zhanglab.ccmb.med.umich.edu/I-TASSER/)
 
-- input
+- Input
 ![](fig/2-27.png)
 
-- output: also PDB files
+- Output: also PDB files, see below for analyzing
 
 ### ii. PyMol visualizing
-**PyMol** is a useful desktop application for protein structure visualization. You may [download it here](https://pymol.org/2/)  
+**PyMol** is a useful desktop application for protein structure visualization. You may [download it from here](https://pymol.org/2/).  
 
 - You may also need to download the [free educational license](https://pymol.org/edu/?q=educational)  
 - You can use PyMol in a very intuitive way using mouse ([a quick tutorial](https://pymol.org/dokuwiki/doku.php?id=mouse:two_button))
