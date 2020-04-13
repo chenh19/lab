@@ -3,7 +3,7 @@ When you have filtered the variants from raw NGS data, you may find there are st
 *Current version: v1.0.0*
 
 #### Table
-- *Understand the basic variant info*
+- [*Understand the basic variant info*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#understand-the-basic-variant-info)
 - *Check variants in the genome*
 - *Retrieve more info from online databases*
 - *Predict variant deleteriousness*
