@@ -100,7 +100,13 @@ Once you have checked the quality and context of the variant, you may retrieve m
 ### iv. Uniprot
 [**UniProt**](https://www.uniprot.org/) for protein info
 
-- UniProt is a protein database where you can find details of the gene products, including protein functions, domains, active sites, isoforms, diseases, interacting proteins, subcellular locations, etc.
+- UniProt is a protein database where you can find details of the gene products, including protein functions, domains, active sites, isoforms, diseases, interacting proteins, subcellular locations, etc.  
+![](fig/2-37.png)
+![](fig/2-38.png)
+![](fig/2-39.png)
+![](fig/2-40.png)
+![](fig/2-41.png)
+
 - You may check whether the variants are or close to active sites
 - You may also check which domains or regions the variants are located in, which may give you some hints of the functional results of the variants
 
