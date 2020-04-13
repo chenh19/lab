@@ -176,11 +176,11 @@ Predict the structures of proteins with variants and compare them with wild type
 **PyMol** is a useful desktop application for protein structure visualization. You may [download it from here](https://pymol.org/2/).  
 
 - You may also need to download the [free educational license](https://pymol.org/edu/?q=educational)  
-- You can use PyMol in a very intuitive way using mouse ([a quick tutorial](https://pymol.org/dokuwiki/doku.php?id=mouse:two_button))
-- Once you download the .pdb file from PDB website, you can open it with PyMol and use mouse to look at the protein
+- You can use PyMol in a very intuitive way with mouse ([a quick tutorial](https://pymol.org/dokuwiki/doku.php?id=mouse:two_button))
+- Once you've downloaded the .pdb file from PDB website, you can open it with PyMol and use mouse to inspect the protein
 ![](fig/2-28.png)
 
-- You may want to highlight some sites on the protein where mutation happened, here is what I usually do: select, show as, color
+- You may want to highlight some residues on the protein where mutation happened, here is what I usually do: ```select```, ```show as```, and ```color```
 ![](fig/2-29.png)
 ![](fig/2-30.png)
 ![](fig/2-31.png)
