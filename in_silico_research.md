@@ -32,7 +32,7 @@ You may first check the variant location in the human genome, which can give you
 - To search for specific location in the genome, first open an IGV instance and select genome version, and then search by: ```chr:pos``` (e.g., ```chr9:5073770```)
 ![](fig/2-1.png)
  
-- If you have .bam files (along with .bai files in the same folder), you may directly open the .bam files with IGV and check the sequencing reads with the same way of searching
+- If you have .bam files (along with .bai files in the same folder), you may directly open the .bam files with IGV and check the sequencing reads by the same way of searching
 ![](fig/2-2.png)
 
 
@@ -40,28 +40,28 @@ You may first check the variant location in the human genome, which can give you
 [**NCBI variation viewer**](https://www.ncbi.nlm.nih.gov/variation/view/) for genome browsing 
 
 - NCBI variation viewer is an online genome visualizing tool integrated with more variant info
-- To search for specific location in the genome, first select genome version, and then search by the same format: ```chr:pos```(e.g., ```chr9:5073770```)
+- To search for specific location in the genome, first select genome version, and then search by the same format: ```chr:pos``` (e.g., ```chr9:5073770```)
 ![](fig/2-3.png)
 - rsID can be useful for the following steps, such as retrieving variant consequences from online databases
 - In some cases, rsID may not be automatically annotated for variants, which may require manual checking for rsID by this way
 
 
 ## 3. Retrieve more info from online databases
-Once you have checked the quality and context of the variant, you can retrieve more variant-related info from online databases
+Once you have checked the quality and context of the variant, you may retrieve more variant-related info from online databases
 
 ### i. GnomAD
 - [GnomAD](https://gnomad.broadinstitute.org/) is an extensive and trusted database, we use it for raw variant data annotating
 - GnomAD has two versions, v2.1.1 is equal to GRCh37/hg19, while v3 is equal to GRCh38, make sure you select the right version before searching  
-- In GnomAD, you may search for gene names and then search for special variants. You may also use the "Export to CSV" function to make variant reference for the genes that you are interested in
+- In GnomAD, you may search for gene names and then search for special variants. You may also use the "Export to CSV" function to make variant reference libraries for the genes that you are interested in
 ![](fig/2-4.png)
 ![](fig/2-5.png)
-- Or, you may directly search for variants by: ```chr-pos-ref-alt```(e.g.,```9-5073770-G-T```)  
+- Or, you may directly search for variants by: ```chr-pos-ref-alt``` (e.g.,```9-5073770-G-T```)  
 - On a variant page, there are three pieces of most important information: **Annotations**, **Population Frequencies**, and **References**
 ![](fig/2-6.png)
 ![](fig/2-7.png)
-- In Annotations section, you can find the consequences (e.g., missense, frameshift, etc.), changes (e.g., amino acid and nucleotide changes), and deleteriousness predictions (e.g., benign or deleterious)
-- In Population Frequencies section, you can find the frequency of the varianst in each population. Some variants might be rare globally but common in a specific population
-- In References section, the info we use most is the rsID from dbSNP. Also, the rsID is hyperlinked to the NCBI SNP page, where you can find more details of the consequences and changes of the variants
+- In the Annotations section, you can find the consequences (e.g., missense, frameshift, etc.), changes (e.g., amino acid and nucleotide changes), and deleteriousness predictions (e.g., benign or deleterious)
+- In the Population Frequencies section, you can find the frequency of the varianst in each population. Some variants might be rare globally but common in a specific population
+- In the References section, the info we use most is the rsID from dbSNP. Also, the rsID is hyperlinked to the NCBI SNP page, where you can find more details of the consequences and changes of the variants
 
 
 ### ii. NCBI
