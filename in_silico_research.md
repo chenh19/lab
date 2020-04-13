@@ -47,7 +47,7 @@ You may first check the variant location in the human genome, which can give you
 
 
 ## 3. Retrieve more info from online databases
-Once you have checked the quality and context of the variant, you may retrieve more variant-related info from online databases
+Once you have checked the quality and context of the variant, you may retrieve more variant-related info from online databases.
 
 ### i. GnomAD
 - [**GnomAD**](https://gnomad.broadinstitute.org/) is an extensive and trusted database, we use it for raw variant data annotating
