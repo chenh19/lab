@@ -140,7 +140,7 @@ Your priority should always be protein prediction, if protein prediction is not 
 ![](fig/2-19.png)
 
 [**Provean Genome**](http://provean.jcvi.org/genome_submit_2.php?species=human)
-- If you are predicting varaints with genomic positions and your variants were originally aligned with GRCh38, you may need to change varaint positions. One way to do it is searching the rsIDs in [NCBI SNP](https://www.ncbi.nlm.nih.gov/snp/), rsIDs are unique for each variant and you can find the position of the variants if they were align to GRCh37/hg19. Another way is using online tools, such as [NCBI Genome Remapping Service](https://www.ncbi.nlm.nih.gov/genome/tools/remap) and [UCSC Lift Genome Annotations](https://genome.ucsc.edu/cgi-bin/hgLiftOver).   
+- If you are predicting varaints with genomic positions and your variants were originally aligned to GRCh38, you may need to change the varaint positions. One way to do it is searching the rsIDs in [NCBI SNP](https://www.ncbi.nlm.nih.gov/snp/), rsIDs are unique for each variant and you can find the position of the same variants if they were align to GRCh37/hg19. Another way is using online tools, such as [NCBI Genome Remapping Service](https://www.ncbi.nlm.nih.gov/genome/tools/remap) and [UCSC Lift Genome Annotations](https://genome.ucsc.edu/cgi-bin/hgLiftOver).   
 
 - Input
 ![](fig/2-20.png)
@@ -148,7 +148,7 @@ Your priority should always be protein prediction, if protein prediction is not 
 ![](fig/2-21.png)
 
 [**PolyPhen**](http://genetics.bwh.harvard.edu/pph2/bgi.shtml)
-- If you are predicting varaints with genomic positions and your variants were originally aligned with GRCh38, you may need to change varaint positions. One way to do it is searching the rsIDs in [NCBI SNP](https://www.ncbi.nlm.nih.gov/snp/), rsIDs are unique for each variant and you can find the position of the variants if they were align to GRCh37/hg19. Another way is using online tools, such as [NCBI Genome Remapping Service](https://www.ncbi.nlm.nih.gov/genome/tools/remap) and [UCSC Lift Genome Annotations](https://genome.ucsc.edu/cgi-bin/hgLiftOver).  
+- If you are predicting varaints with genomic positions and your variants were originally aligned to GRCh38, you may need to change the varaint positions. One way to do it is searching the rsIDs in [NCBI SNP](https://www.ncbi.nlm.nih.gov/snp/), rsIDs are unique for each variant and you can find the position of the same variants if they were align to GRCh37/hg19. Another way is using online tools, such as [NCBI Genome Remapping Service](https://www.ncbi.nlm.nih.gov/genome/tools/remap) and [UCSC Lift Genome Annotations](https://genome.ucsc.edu/cgi-bin/hgLiftOver).   
 
 - Input
 ![](fig/2-22.png)
