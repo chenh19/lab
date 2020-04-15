@@ -156,7 +156,7 @@ Your priority should always be protein prediction, if protein prediction is not 
 - Output
 ![](fig/2-23.png)
 
-- PolyPhen uses a relatively old database. In rare cases for protein prediction, the "o_pos" might be wrong and you can easily spot it by comparing "o_pos" with your input position. I would suggest that you remove these prediction results. If you really need the results, you may have to search for previous UniProt IDs for the proteins. So far I have only seen one protein like this, which is CFHR4, and it requires a dated protein ID, Q5DVJ7, for prediction.  
+- PolyPhen uses a relatively old database. In rare cases for protein prediction, the "o_pos" might be wrong and you can easily spot it by comparing "o_pos" with your input position. I would suggest that you remove those prediction results. If you really need the results, you may have to search for the previous UniProt IDs for the proteins. So far I have only seen one protein like this, which is CFHR4, and it requires a dated protein ID, Q5DVJ7, for prediction.  
 
 
 ## 5. Predict protein modification site
