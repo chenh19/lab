@@ -141,6 +141,7 @@ Your priority should always be protein prediction, if protein prediction is not 
 [**Provean Genome**](http://provean.jcvi.org/genome_submit_2.php?species=human)
 
 - Input
+> If your variants were originally aligned with GRCh38, you may need to change varaint positions. One way to do it is searching the rsIDs in [NCBI SNP](https://www.ncbi.nlm.nih.gov/snp/), rsIDs are unique for each variant and you can find the position of the variants if they were align to GRCh37/hg19.
 ![](fig/2-20.png)
 - Output
 ![](fig/2-21.png)
