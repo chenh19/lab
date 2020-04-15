@@ -132,7 +132,7 @@ Although you can find varaint deleteriousness in online databases like GnomAD, y
 Your priority should always be protein prediction, if protein prediction is not applicable, such as splice varaints, you can do genome prediction instead.  
 
 [**Provean Protein**](http://provean.jcvi.org/protein_batch_submit.php?species=human)
-- Use reference sequences starting with "NP_" as much as possible
+- Use reference sequences starting with "NP_" for protein prediction as much as possible
 
 - Input
 ![](fig/2-18.png)
@@ -148,12 +148,16 @@ Your priority should always be protein prediction, if protein prediction is not 
 ![](fig/2-21.png)
 
 [**PolyPhen**](http://genetics.bwh.harvard.edu/pph2/bgi.shtml)
+- Use reference sequences starting with "NP_" for protein prediction as much as possible
 - If you are predicting varaints with genomic positions and your variants were originally aligned to GRCh38, you may need to change the varaint positions. One way to do it is searching the rsIDs in [NCBI SNP](https://www.ncbi.nlm.nih.gov/snp/), rsIDs are unique for each variant and you can find the position of the same variants if they were align to GRCh37/hg19. Another way is using online tools, such as [NCBI Genome Remapping Service](https://www.ncbi.nlm.nih.gov/genome/tools/remap) and [UCSC Lift Genome Annotations](https://genome.ucsc.edu/cgi-bin/hgLiftOver).   
 
 - Input
 ![](fig/2-22.png)
 - Output
 ![](fig/2-23.png)
+
+- PolyPhen uses a relatively old database. In rare cases for protein prediction, the "o_pos" might be wrong and you can easily spot it by comparing "o_pos" with your input. I would suggest that you remove these prediction results. If you really need the results, you may have to search for previous UniProt IDs for the proteins. So far I have only seen one protein like this, which is CFHR4, and it requires a dated RefSeq, Q5DVJ7, for prediction.
+
 
 
 ## 5. Predict protein modification site
