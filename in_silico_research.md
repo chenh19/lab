@@ -134,26 +134,26 @@ Your priority should always be protein prediction, if protein prediction is not 
 [**Provean Protein**](http://provean.jcvi.org/protein_batch_submit.php?species=human)
 - Use reference sequences starting with "NP_" for protein prediction as much as possible
 
-- Input
+- Input:
 ![](fig/2-18.png)
-- Output
+- Output:
 ![](fig/2-19.png)
 
 [**Provean Genome**](http://provean.jcvi.org/genome_submit_2.php?species=human)
 - If you are predicting varaints with genomic positions and your variants were originally aligned to GRCh38, you may need to change the varaint positions. One way to do it is searching the rsIDs in [NCBI SNP](https://www.ncbi.nlm.nih.gov/snp/), rsIDs are unique for each variant and you can find the position of the same variants if they were align to GRCh37/hg19. Another way is using online tools, such as [NCBI Genome Remapping Service](https://www.ncbi.nlm.nih.gov/genome/tools/remap) and [UCSC Lift Genome Annotations](https://genome.ucsc.edu/cgi-bin/hgLiftOver).   
 
-- Input
+- Input:
 ![](fig/2-20.png)
-- Output
+- Output:
 ![](fig/2-21.png)
 
 [**PolyPhen**](http://genetics.bwh.harvard.edu/pph2/bgi.shtml)
 - Use reference sequences starting with "NP_" for protein prediction as much as possible
 - If you are predicting varaints with genomic positions and your variants were originally aligned to GRCh38, you may need to change the varaint positions. One way to do it is searching the rsIDs in [NCBI SNP](https://www.ncbi.nlm.nih.gov/snp/), rsIDs are unique for each variant and you can find the position of the same variants if they were align to GRCh37/hg19. Another way is using online tools, such as [NCBI Genome Remapping Service](https://www.ncbi.nlm.nih.gov/genome/tools/remap) and [UCSC Lift Genome Annotations](https://genome.ucsc.edu/cgi-bin/hgLiftOver).   
 
-- Input
+- Input:
 ![](fig/2-22.png)
-- Output
+- Output:
 ![](fig/2-23.png)
 
 - PolyPhen uses a relatively old database. In rare cases for protein prediction, the "o_pos" might be wrong and you can easily spot it by comparing "o_pos" with your input position. I would suggest that you remove those prediction results. If you really need the results, you may have to search for the previous UniProt IDs for the proteins. So far I have only seen one protein like this, which is CFHR4, and it requires a dated protein ID, Q5DVJ7, for prediction.  
@@ -169,7 +169,7 @@ Post-translational modifications are important for protein property, structure a
 - Set parameters according to the guidance provided by with the tool
 ![](fig/2-25.png)
 - Submit and run
-- Output
+- Output:
 ![](fig/2-26.png)
 
 
@@ -180,7 +180,7 @@ Predict the structures of proteins with variants and compare them with wild type
 
 [**I-TASSER server**](https://zhanglab.ccmb.med.umich.edu/I-TASSER/)
 
-- Input
+- Input:
 ![](fig/2-27.png)
 
 - Output: also PDB files, see below for analyzing
