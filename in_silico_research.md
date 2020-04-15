@@ -60,7 +60,7 @@ Once you have checked the quality and context of the variant, you may retrieve m
 ![](fig/2-6.png)
 ![](fig/2-7.png)
 - In the Annotations section, you can find the consequences (e.g., missense, frameshift, etc.), changes (e.g., amino acid and nucleotide changes), and deleteriousness predictions (e.g., benign or deleterious)
-- In the Population Frequencies section, you can find the frequency of the varianst in each population. Some variants might be rare globally but common in a specific population. Usually we are looking for variants that are rare (frequency <0.01) in all populations
+- In the Population Frequencies section, you can find the frequency of the varianst in each population. Some variants might be rare globally but common in a specific population. Usually we are looking for variants that are rare (frequency <0.01) in all populations because they are more likely to be disease causative
 - In the References section, the info we use most is the rsID from dbSNP. Also, the rsID is hyperlinked to the NCBI SNP page, where you can find more details of the consequences and changes of the variants
 
 
