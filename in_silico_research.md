@@ -82,7 +82,7 @@ Once you have checked the quality and context of the variant, you may retrieve m
 ![](fig/2-11.png)
 - There might be multiple RefSeqs, select the ones for your interested isoforms
 - There might also be multiple RefSeqs for the same isofroms from different accessions, I would suggest selecting the ones with refseq starting with "NM_" ([difference between XM_ and NM_](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between))  
-- You may download the sequences for the following steps
+- You may download the sequences for the following steps. You may open the sequence files with [SnapGene](https://www.snapgene.com/snapgene-viewer/)
 ![](fig/2-12.png)
 
 [**NCBI PubMed**](https://www.ncbi.nlm.nih.gov/pubmed/) for existing functional studies
