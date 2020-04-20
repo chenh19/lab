@@ -10,6 +10,7 @@ When you have filtered the variants from raw NGS data, you may find there are st
 5. [*Predict protein modification site*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#5-predict-protein-modification-site)
 6. [*Predict protein structural changes*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#6-predict-protein-structural-changes)
 7. [*Calculate odds ratio between variants and diseases*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#7-calculate-odds-ratio-between-variants-and-diseases)
+8. [*Appendix*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#8-appendix)
 
 ## 1. Understand the basic variant info
 - The most basic variant info contains four parameters: **chromosome**, **position**, **reference**, **alternative**. These four parameters may be separated or concatenated with delimiters.  
@@ -217,8 +218,8 @@ Predict the structures of proteins with variants and compare them with wild type
 Last but not least, you may calculate the [**odds ratio**](https://www.wikiwand.com/en/Odds_ratio) to see the association between the variants and specific diseases.
 
 ## 8. Appendix
-**Amino acids**  
+- **Amino acids**  
 ![](fig/aa-1.png)  
 
-**Amino acid codons**  
+- **Amino acid codons**  
 ![](fig/aa-2.png)  
