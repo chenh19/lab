@@ -215,3 +215,10 @@ Predict the structures of proteins with variants and compare them with wild type
 
 ## 7. Calculate odds ratio between variants and diseases
 Last but not least, you may calculate the [**odds ratio**](https://www.wikiwand.com/en/Odds_ratio) to see the association between the variants and specific diseases.
+
+## 8. Appendix
+**Amino acids**  
+![](fig/aa-1.png)  
+
+**Amino acid codons**  
+![](fig/aa-2.png)  
