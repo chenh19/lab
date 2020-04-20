@@ -1,6 +1,6 @@
 # Preliminary *in silico* research for variants identified by NGS
 When you have filtered the variants from raw NGS data, you may find there are still too many of them and it's hard to decide which ones are more valuable for downstream experimental research. Therefore, you may do *in silico* research to get as much info about the variants as possible first.  
-*Current version: v1.0.1*
+*Current version: v1.0.2*
 
 #### Table
 1. [*Understand the basic variant info*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#1-understand-the-basic-variant-info)
@@ -174,7 +174,7 @@ Post-translational modifications are important for protein property, structure a
 - Submit and run
 - Output:
 ![](fig/2-42.png)
-- In the results, the left box is the amino acid residues (positions and amino acids), the right box is the results ("yes" means it's likely to be a phosphorylation site, "." means it's unlikely to be one).
+- In the results, the left box is the amino acid residues (positions and amino acids), the right box is the results ("yes" means it's likely to be a phosphorylation site, "." means it's unlikely to be one)
 - Taking "**18 S**" as an example, it's the 18th amino acid and it's a Serine. The prediction program found 7 kinases for this Ser residue, which are listed in descending order by scores. The first three kinase, unsp, PKC, and cdc2, are predicted to be possible kinases for this Ser (I.e., Ser18 might be a phosphorylation target site of unsp, PKC, and cdc2)
 
 
