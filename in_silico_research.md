@@ -170,7 +170,7 @@ Post-translational modifications are important for protein property, structure a
 ![](fig/2-25.png)
 - Submit and run
 - Output:
-![](fig/2-26.png)
+![26](fig/2-26.png)
 
 
 ## 6. Predict protein structural changes
