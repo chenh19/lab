@@ -165,12 +165,16 @@ Post-translational modifications are important for protein property, structure a
 [**NetPhos server**](http://www.cbs.dtu.dk/services/NetPhos/)
 
 - Put in your sequence ([FASTA format](https://en.wikipedia.org/wiki/FASTA_format))  
+- You may use it to predict the wild type sequences if the S/T/Y residues are gone, or mutated sequences if new S/T/Y residues are introduced
 ![](fig/2-24.png)
 - Set parameters according to the guidance provided by with the tool
+- NetPhos uses 0.5 as a cutoff. Residues with scores >0.5 will be called as possible phosphorylation sites (labeled as "yes"), while residues with scores <0.5 will not be called (labeled as ".")
 ![](fig/2-25.png)
 - Submit and run
 - Output:
 ![](fig/2-42.png)
+- In the results, the left box is the amino acid residues (position and amino acids), the right box is the results ("yes" means it's likely to be a phosphorylation site, "." means it's unlikely to be one).
+- Taking "**18 S**" as an example, this is the 18th amino acid and it's a Serine. The prediction program found 7 kinases for this Ser residue, which are listed in descending order by scores. The first three kinase, unsp, PKC, and cdc2, are predicted to be possible kinases for this Ser (I.e., Ser18 might be a phosphorylation target site of unsp, PKC, and cdc2)
 
 
 ## 6. Predict protein structural changes
