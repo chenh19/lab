@@ -11,6 +11,9 @@ First of all, to understand why a ~20 bp sequence can be unique in the whole gen
 - <img src="https://render.githubusercontent.com/render/math?math=N\geq 15.74">, so when <img src="https://render.githubusercontent.com/render/math?math=N \geq 16">, a sequence can be considered as unique in the whole genome
 
 Second, 3 ways to calculate the Tm ([Understanding melting temperature (Tm)](https://www.idtdna.com/pages/education/decoded/article/understanding-melting-temperature-(t-sub-m-sub-))):  
+
+> Note: [Annealing Temperature (Ta)](https://www.labce.com/spg1025560_annealing_temperature_ta.aspx) is slightly different from Tm, although they are often used interchangeably
+
 - using SnapGene
 - using online calculator: [NEB Tm calculator for specific PCR enzymes/kits:](http://tmcalculator.neb.com/)
 - manually: <img src="https://render.githubusercontent.com/render/math?math=Tm=2\times (A %2B T) %2B 4\times (G %2B C)">
