@@ -1,5 +1,5 @@
 # Oligo designing
-![](fig/oligo-2.png)  
+![](fig/oligo-3.png)  
 First of all, to understand why a ~20bp sequence can be unique in the whole genome, you may do the calculation below:  
 
 - In general, you may assume that for a nucleotide, the probability of it to be A, T, C, or G is <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{4}">.
