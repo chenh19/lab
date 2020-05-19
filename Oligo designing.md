@@ -40,7 +40,7 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 - Primer Tm: ```58-60 °C```
 - Primer length: ```16-32 bp```
 - Product length: ```100-200 bp``` (for fast qPCR process)
-- Probe Tm: ```~10 °C higher than primers' Tm``` (some qPCR kits use SYBR and don't require probes, while some other qPCR kits use fluorescent probes, such as Taqman)
+- Probe Tm: ```5-10 °C higher than primers' Tm``` (some qPCR kits use SYBR and don't require probes, while some other qPCR kits use fluorescent probes, such as Taqman)
 
 #### Adding RE sites
 - In many situation, you would want to add Restriction Endonuclease cutting sites to both ends of your product, so that in can integrate your product into a vector later.
@@ -54,23 +54,67 @@ Taking [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) a
 
 
 #### Extending short DNA oligos
+Oligo is usually less than 60 bp. If you want a slightly longer oligos, one way is to order [DNA ultramer](https://www.idtdna.com/pages/products/custom-dna-rna/dna-oligos/ultramer-dna-oligos), another way is to extend short oligos.
+For example, two 60 bp oligos with 21 bp complementary sequence. Each oligo is both template and primer in this case. Just do regular PCR and you can get the full length double strand DNA (99 bp in this case)
 
 
 
 ## Primers for sanger sequencing
-PCR
+#### PCR product sequencing
+- basically the same primers for PCR, but use **only one** primer for each sequencing (sequencing is unidirectional). If you want to sequence it in both forward and reverse manner, you can sequence twice.
+- Beginning: poor quality
+- Middle region: good quality
+- End: poor quality
+
+#### Whole coding region sequencing
+- usually 300-400 non-overlapping sequence
+- overlap the beginning and the end of each fragment
+
 
 
 ## Guide RNAs for gene knock-out
+When doing CRISPR, you can transfect cells with either plasmids or more direct RNP (gRNA + Cas9 protein)
+CRISPR is mostly used in our lab for for gene knock-out or variant knock-in.
+Gene knock-out is relatively simple, just make an DSB and use NHEJ to introduce insertion or deletion and therefore cause frameshift (gRNAs are typically at the beginning of the gene, first 1 or 2 exons)
+
+
+#### Making gRNA plasmid
+you may follow this protocl
+when selecting the spacers, [Feng Zhang's lab](https://zlab.bio/guide-design-resources), among which IDT is most frequently used by our lab since IDT makes DNA/RNA oligos
+usually, one gRNA should be enough to cause small insertions or deletions. If large deletion is needed, you may design two gRNAs at both ends of the desired deletion.
+
+#### DNA oligo/ultramer for *in vitro* transcription
+- T7 promoter
+- Spacer
+- Scaffold
 
 
 
 ## Prime editing gRNAs for variants knock-in
+Another frequent application of CRISPR is variant knock-in. Still, you can use either plasmid or RNP. But RNP is preferred, because single clones with SNP are relatively difficult to select in the pool, the higher efficiency provided by RNP can be helpful.
+There are many ways to introduce a variants. We currently use the most recent prime editing. Traditional combination of [gRNAs and donor templates](https://horizondiscovery.com/en/applications/crispr-cas9/homology-directed-repair-with-a-plasmid-donor) are not covered in this tutorial. 
+Prime editing is relatively complicated but also very compact and high efficient. It doesn't use cell's HDR mechanism, but use reverse transcription instead.
+Prime editing uses two gRNA, one introduce the variant, another is for the non-edited strand, which is to increase the variant introduction efficiency
 
-### pegRNA for the strand to be edited
+#### pegRNA for the strand to be edited
+- T7 promoter
+- Spacer
+- Scaffold
+- RT (reverse transcription template) + PBS (primer binding site)
+- *in vitro* transcription, capping and tailing
+> When designing pegRNA, the spacer near the edited site might not have high scores, which is OK, because prime editing uses nickase. If it cut offsite, it will not introduce the variant because the RT won't align, and the nick can be ligated.
+> Utilizing or designing RE cutting site for variant detection
 
-### gRNA for the non-edited strand 
+#### gRNA for the non-edited strand 
+PE3b is not practical in many cases. Therefore focusing on PE3 only here.
+The secondary gRNA should be 40-90 bp away from the edited site
+Doesn't have RT and PBS, only introduce a nick, will not introduce any sequence change
 
+
+
+## Gene panel designing for NGS
+[illumina Gene Panel & Arrary Finder](https://www.illumina.com/products/selection-tools/gene-panel-finder.html#/)
+> Usually you don't have to design the paneled oligos yourself.
 
 ## Appendix
 
