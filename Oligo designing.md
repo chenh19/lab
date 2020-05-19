@@ -1,9 +1,8 @@
 # Oligo designing
-
+![](fig/oligo-1.png)  
 First of all, to understand why a ~20bp sequence can be unique in the whole genome, you may do the calculation below:  
 
 - In general, you may assume that for a nucleotide, the probability of it to be A, T, C, or G is <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{4}">.
-![](fig/oligo-1.png)
 - Then, for an oligo with a length of N bp, the probability of a specific sequence is <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{4} ^{N}">.
 - Human genome is about 3 billion bp, we can calculate the N that the sequence only shows up once in the genome by solving the equation: <img src="https://render.githubusercontent.com/render/math?math=f(N)=3\times10^{9} \times \frac{1}{4} ^{N}">, <img src="https://render.githubusercontent.com/render/math?math=f(N)\leq 1">
 - <img src="https://render.githubusercontent.com/render/math?math=N\geq 15.74">, so when <img src="https://render.githubusercontent.com/render/math?math=N \geq 16">, a sequence can be considered as unique in the whole genome
