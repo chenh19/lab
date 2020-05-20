@@ -68,6 +68,12 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 - Taking [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) and [KpnI](https://www.neb.com/products/r0142-kpni#Product%20Information) as an example
 ![](fig/oligo-17.png)
 ![](fig/oligo-18.png)
+![](fig/oligo-23.png)
+![](fig/oligo-24.png)
+![](fig/oligo-25.png)
+- How the PCR will work
+![](fig/oligo-26.png)
+![](fig/oligo-27.png)
 
 #### Site-directed mutation
 [NEBaseChange](http://nebasechanger.neb.com/)
