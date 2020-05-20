@@ -29,7 +29,7 @@ Second, 3 ways to calculate the Tm ([Understanding melting temperature (Tm)](htt
 ## 1. Primers for PCR
 DNA oligos are most frequently used in daily PCR experiments. Below are the basic principles for designing the oligos.
 
-#### Make a primer
+#### Making a primer
 ![](fig/oligo-6.png)
 ![](fig/oligo-7.png)
 ![](fig/oligo-8.png)
@@ -39,6 +39,10 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 - Primer Tm: ```58-60 °C```
 - Primer length: ```16-32 bp```
 - Product length: ```~500 bp```
+![](fig/oligo-10.png)
+![](fig/oligo-11.png)
+![](fig/oligo-12.png)
+
 > - GC% is usually another specs mentioned in other tutorials, but if Tm and Length are within range, GC% will be good.  
 > Note: A set of primers can also amplify a single-strand DNA template. In the first cycle, only one primer will work, but once double strand DNA template forms, the primer will amplify the double strand DNA.
 > If you are doing genotyping, please remeber to use the genomic DNA map, not the mRNA/cDNA map
