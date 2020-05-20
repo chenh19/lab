@@ -1,4 +1,4 @@
-# DNA Oligo designing
+# DNA Oligo designing principles
 *Version: v1.0.0*
 
 #### Table
