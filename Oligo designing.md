@@ -93,14 +93,18 @@ For example, two 60 bp oligos with 21 bp complementary sequence. Each oligo is b
 ## 2. Primers for sanger sequencing
 #### PCR product sequencing
 - basically the same primers for PCR, but use **only one** primer for each sequencing (sequencing is unidirectional). If you want to sequence it in both forward and reverse manner, you can sequence twice.
-- Beginning: poor quality
+- Beginning region: poor quality
+![](fig/oligo-33.png)
 - Middle region: good quality
+![](fig/oligo-34.png)
 - End: poor quality
+![](fig/oligo-35.png)
 
 #### Whole coding region sequencing
-- usually 300-400 non-overlapping sequence
+- usually 300-400 between the primes (non-overlapping region)
 - overlap the beginning and the end of each fragment
-
+![](fig/oligo-36.png)
+![](fig/oligo-37.png)
 
 
 ## 3. Guide RNAs for gene knock-out
