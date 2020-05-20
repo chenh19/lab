@@ -1,5 +1,5 @@
 # DNA Oligo designing principles
-*Version: v1.0.0*
+*Version: v1.0.1*
 
 #### Table
 1. [*Background*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#1-background)
