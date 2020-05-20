@@ -54,6 +54,10 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 - Primer length: ```16-32 bp```
 - Product length: ```100-200 bp``` (for fast qPCR process)
 - Probe Tm: ```5-10 °C higher than primers' Tm``` (some qPCR kits use SYBR and don't require probes, while some other qPCR kits use fluorescent probes, such as Taqman)
+![](fig/oligo-13.png)
+![](fig/oligo-14.png)
+![](fig/oligo-15.png)
+![](fig/oligo-16.png)
 
 #### Adding RE sites
 - In many situation, you would want to add Restriction Endonuclease cutting sites to both ends of your product, so that in can integrate your product into a vector later.
