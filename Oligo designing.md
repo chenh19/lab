@@ -2,11 +2,12 @@
 *Version: v1.0.0*
 
 #### Table
-1. [*Primers for PCR*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#1-primers-for-pcr)
-2. [*Primers for sanger sequencing*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#2-primers-for-sanger-sequencing)
-3. [*Guide RNAs for gene knock-out*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#3-guide-rnas-for-gene-knock-out)
-4. [*Prime editing gRNAs for variants knock-in*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#4-prime-editing-grnas-for-variants-knock-in)
-5. [*Gene panel designing for NGS*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#5-gene-panel-designing-for-ngs)
+1. [*Background*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#1-background)
+2. [*Primers for PCR*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#2-primers-for-pcr)
+3. [*Primers for sanger sequencing*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#3-primers-for-sanger-sequencing)
+4. [*Guide RNAs for gene knock-out*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#4-guide-rnas-for-gene-knock-out)
+5. [*Prime editing gRNAs for variants knock-in*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#5-prime-editing-grnas-for-variants-knock-in)
+6. [*Gene panel designing for NGS*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#6-gene-panel-designing-for-ngs)
 
 
 ## 1. Background
