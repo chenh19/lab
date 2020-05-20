@@ -7,7 +7,6 @@
 3. [*Primers for sanger sequencing*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#3-primers-for-sanger-sequencing)
 4. [*Guide RNAs for gene knock-out*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#4-guide-rnas-for-gene-knock-out)
 5. [*Prime editing gRNAs for variants knock-in*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#5-prime-editing-grnas-for-variants-knock-in)
-6. [*Gene panel designing for NGS*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#6-gene-panel-designing-for-ngs)
 
 
 ## 1. Background
@@ -37,13 +36,13 @@ Second, 3 ways to calculate the Tm ([Understanding melting temperature (Tm)](htt
 ## 2. Primers for PCR
 DNA oligos are most frequently used in daily PCR experiments. Below are the basic principles for designing the oligos.
 
-#### Making a primer
+### Making a primer
 - Select a region in SanpGene, then add primer
 ![](fig/oligo-6.png)
 ![](fig/oligo-7.png)
 ![](fig/oligo-8.png)
 
-#### Primers for regular PCR
+### Primers for regular PCR
 - DNA Oligo amount: 2 (forward primer for one strand, reverse primer for the other strand)
 - Primer Tm: ```58-60 °C```
 - Primer length: ```16-32 bp```
@@ -56,7 +55,7 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 > Note: A set of primers can also amplify a single-strand DNA template. In the first cycle, only one primer will work, but once double strand DNA template forms, the primer will amplify the double strand DNA.
 > If you are doing genotyping, please remeber to use the genomic DNA map, not the mRNA/cDNA map
 
-#### Primers and probes for quantitative PCR (qPCR)
+### Primers and probes for quantitative PCR (qPCR)
 - DNA Oligo amount: 2 or 3 (forward primer for one strand, reverse primer for the other strand, maybe a probe in between for either strand)
 - Primer Tm: ```58-60 °C```
 - Primer length: ```16-32 bp```
@@ -67,7 +66,7 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 ![](fig/oligo-15.png)
 ![](fig/oligo-16.png)
 
-#### Adding RE sites
+### Adding RE sites
 - In many situation, you would want to add Restriction Endonuclease cutting sites to both ends of your product, so that in can integrate your product into a vector later.
 - [NEB RE list](https://www.neb.com/products/restriction-endonucleases). You can also show all the available RE sites on your map
 ![](fig/oligo-19.png)
@@ -83,7 +82,7 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 ![](fig/oligo-26.png)
 ![](fig/oligo-27.png)
 
-#### Site-directed mutation
+### Site-directed mutation
 - [NEBaseChange](http://nebasechanger.neb.com/)
 - Typically used for circular plasmid. (After PCR, use DNA ligase to ligate the linear DNA and make it circular again)
 - This methods can also introduce insertion or deletion, just change the desired sequence in the NEBaseChanger.
@@ -92,14 +91,14 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 ![](fig/oligo-30.png)
 ![](fig/oligo-31.png)
 
-#### Extending short DNA oligos
+### Extending short DNA oligos
 - Oligo is usually less than 60 bp. If you want a slightly longer oligos, one way is to order [DNA ultramer](https://www.idtdna.com/pages/products/custom-dna-rna/dna-oligos/ultramer-dna-oligos), another way is to extend short oligos.
 For example, two 60 bp oligos with 21 bp complementary sequence. Each oligo is both template and primer in this case. Just do regular PCR and you can get the full length double strand DNA (99 bp in this case)
 ![](fig/oligo-32.png)
 
 
-## 3. Primers for sanger sequencing
-#### PCR product sequencing
+## 3. Primers for sequencing
+### Sanger sequencing for PCR products
 - basically the same primers for PCR, but use **only one** primer for each sequencing (sequencing is unidirectional). If you want to sequence it in both forward and reverse manner, you can sequence twice.
 - Beginning region: poor quality
 ![](fig/oligo-33.png)
@@ -108,11 +107,16 @@ For example, two 60 bp oligos with 21 bp complementary sequence. Each oligo is b
 - End: poor quality
 ![](fig/oligo-35.png)
 
-#### Whole coding region sequencing
+### Sange sequencing for large regions
 - usually 300-400 between the primes (non-overlapping region)
 - overlap the beginning and the end of each fragment
 ![](fig/oligo-36.png)
 ![](fig/oligo-37.png)
+
+### Gene panel designing for NGS
+- [illumina Gene Panel & Arrary Finder](https://www.illumina.com/products/selection-tools/gene-panel-finder.html#/)
+![](fig/oligo-1.png)
+> Usually you don't have to design the paneled oligos yourself.
 
 
 ## 4. Guide RNAs for gene knock-out
@@ -157,10 +161,7 @@ Doesn't have RT and PBS, only introduce a nick, will not introduce any sequence 
 
 
 
-## 6. Gene panel designing for NGS
-- [illumina Gene Panel & Arrary Finder](https://www.illumina.com/products/selection-tools/gene-panel-finder.html#/)
-![](fig/oligo-1.png)
-> Usually you don't have to design the paneled oligos yourself.
+
 
 ## Appendix
 
