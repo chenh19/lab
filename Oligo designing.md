@@ -36,13 +36,13 @@ Second, 3 ways to calculate the Tm ([Understanding melting temperature (Tm)](htt
 ## 2. Primers for PCR
 DNA oligos are most frequently used in daily PCR experiments. Below are the basic principles for designing the oligos.
 
-### Making a primer
+### i. Making a primer
 - Select a region in SanpGene, then add primer
 ![](fig/oligo-6.png)
 ![](fig/oligo-7.png)
 ![](fig/oligo-8.png)
 
-### Primers for regular PCR
+### ii. Primers for regular PCR
 - DNA Oligo amount: 2 (forward primer for one strand, reverse primer for the other strand)
 - Primer Tm: ```58-60 °C```
 - Primer length: ```16-32 bp```
@@ -55,7 +55,7 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 > Note: A set of primers can also amplify a single-strand DNA template. In the first cycle, only one primer will work, but once double strand DNA template forms, the primer will amplify the double strand DNA.
 > If you are doing genotyping, please remeber to use the genomic DNA map, not the mRNA/cDNA map
 
-### Primers and probes for quantitative PCR (qPCR)
+### iii. Primers and probes for quantitative PCR (qPCR)
 - DNA Oligo amount: 2 or 3 (forward primer for one strand, reverse primer for the other strand, maybe a probe in between for either strand)
 - Primer Tm: ```58-60 °C```
 - Primer length: ```16-32 bp```
@@ -66,7 +66,7 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 ![](fig/oligo-15.png)
 ![](fig/oligo-16.png)
 
-### Adding RE sites
+### iv. Adding RE sites
 - In many situation, you would want to add Restriction Endonuclease cutting sites to both ends of your product, so that in can integrate your product into a vector later.
 - [NEB RE list](https://www.neb.com/products/restriction-endonucleases). You can also show all the available RE sites on your map
 ![](fig/oligo-19.png)
@@ -82,7 +82,7 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 ![](fig/oligo-26.png)
 ![](fig/oligo-27.png)
 
-### Site-directed mutation
+### v. Site-directed mutation
 - [NEBaseChange](http://nebasechanger.neb.com/)
 - Typically used for circular plasmid. (After PCR, use DNA ligase to ligate the linear DNA and make it circular again)
 - This methods can also introduce insertion or deletion, just change the desired sequence in the NEBaseChanger.
@@ -91,14 +91,14 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 ![](fig/oligo-30.png)
 ![](fig/oligo-31.png)
 
-### Extending short DNA oligos
+### vi. Extending short DNA oligos
 - Oligo is usually less than 60 bp. If you want a slightly longer oligos, one way is to order [DNA ultramer](https://www.idtdna.com/pages/products/custom-dna-rna/dna-oligos/ultramer-dna-oligos), another way is to extend short oligos.
 For example, two 60 bp oligos with 21 bp complementary sequence. Each oligo is both template and primer in this case. Just do regular PCR and you can get the full length double strand DNA (99 bp in this case)
 ![](fig/oligo-32.png)
 
 
 ## 3. Primers for sequencing
-### Sanger sequencing for PCR products
+### i. Sanger sequencing for PCR products
 - basically the same primers for PCR, but use **only one** primer for each sequencing (sequencing is unidirectional). If you want to sequence it in both forward and reverse manner, you can sequence twice.
 - Beginning region: poor quality
 ![](fig/oligo-33.png)
@@ -107,13 +107,13 @@ For example, two 60 bp oligos with 21 bp complementary sequence. Each oligo is b
 - End: poor quality
 ![](fig/oligo-35.png)
 
-### Sange sequencing for large regions
+### ii. Sange sequencing for large regions
 - usually 300-400 between the primes (non-overlapping region)
 - overlap the beginning and the end of each fragment
 ![](fig/oligo-36.png)
 ![](fig/oligo-37.png)
 
-### Gene panel designing for NGS
+### iii. Gene panel designing for NGS
 - [illumina Gene Panel & Arrary Finder](https://www.illumina.com/products/selection-tools/gene-panel-finder.html#/)
 ![](fig/oligo-1.png)
 > Usually you don't have to design the paneled oligos yourself.
@@ -125,14 +125,14 @@ CRISPR is mostly used in our lab for for gene knock-out or variant knock-in.
 Gene knock-out is relatively simple, just make an DSB and use NHEJ to introduce insertion or deletion and therefore cause frameshift (gRNAs are typically at the beginning of the gene, first 1 or 2 exons)
 
 
-#### Making gRNA plasmid
+### i. Making gRNA plasmid
 - you may follow this protocl
 ![](fig/oligo-2.png)
 
 - when selecting the spacers, [Feng Zhang's lab](https://zlab.bio/guide-design-resources), among which IDT is most frequently used by our lab since IDT makes DNA/RNA oligos
 usually, one gRNA should be enough to cause small insertions or deletions. If large deletion is needed, you may design two gRNAs at both ends of the desired deletion.
 
-#### DNA oligo/ultramer for *in vitro* transcription
+### ii. DNA oligo/ultramer for *in vitro* transcription
 - T7 promoter
 - Spacer
 - Scaffold
@@ -145,7 +145,7 @@ There are many ways to introduce a variants. We currently use the most recent pr
 Prime editing is relatively complicated but also very compact and high efficient. It doesn't use cell's HDR mechanism, but use reverse transcription instead.
 Prime editing uses two gRNA, one introduce the variant, another is for the non-edited strand, which is to increase the variant introduction efficiency
 
-#### pegRNA for the strand to be edited
+### i. pegRNA for the strand to be edited
 - T7 promoter
 - Spacer
 - Scaffold
@@ -154,7 +154,7 @@ Prime editing uses two gRNA, one introduce the variant, another is for the non-e
 > When designing pegRNA, the spacer near the edited site might not have high scores, which is OK, because prime editing uses nickase. If it cut offsite, it will not introduce the variant because the RT won't align, and the nick can be ligated.
 > Utilizing or designing RE cutting site for variant detection
 
-#### gRNA for the non-edited strand 
+### ii. gRNA for the non-edited strand 
 PE3b is not practical in many cases. Therefore focusing on PE3 only here.
 The secondary gRNA should be 40-90 bp away from the edited site
 Doesn't have RT and PBS, only introduce a nick, will not introduce any sequence change
