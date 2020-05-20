@@ -18,7 +18,7 @@ Second, 3 ways to calculate the Tm ([Understanding melting temperature (Tm)](htt
 - using SnapGene ([Download SnapGene](https://www.snapgene.com/snapgene-viewer/))
 ![](fig/oligo-4.png)
 - using online calculator: [NEB Tm calculator for specific PCR enzymes/kits](http://tmcalculator.neb.com/)
-![](fig/oligo-5.png)
+![](fig/oligo-9.png)
 - manual calculation: <img src="https://render.githubusercontent.com/render/math?math=Tm=2\times (A %2B T) %2B 4\times (G %2B C)">, where ```A, T, C, G``` means the counts of each nucleotide in the **single-strand** oligos
 
 > Note:   
