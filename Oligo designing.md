@@ -122,8 +122,10 @@ Gene knock-out is relatively simple, just make an DSB and use NHEJ to introduce 
 
 
 #### Making gRNA plasmid
-you may follow this protocl
-when selecting the spacers, [Feng Zhang's lab](https://zlab.bio/guide-design-resources), among which IDT is most frequently used by our lab since IDT makes DNA/RNA oligos
+- you may follow this protocl
+![](fig/oligo-2.png)
+
+- when selecting the spacers, [Feng Zhang's lab](https://zlab.bio/guide-design-resources), among which IDT is most frequently used by our lab since IDT makes DNA/RNA oligos
 usually, one gRNA should be enough to cause small insertions or deletions. If large deletion is needed, you may design two gRNAs at both ends of the desired deletion.
 
 #### DNA oligo/ultramer for *in vitro* transcription
