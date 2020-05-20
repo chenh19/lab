@@ -1,11 +1,12 @@
 # DNA Oligo designing
 *Version: v1.0.0*
 
-![](fig/oligo-3.png)
+
 
 First of all, to understand why a ~20 bp sequence can be unique in the whole genome:  
 
 - In general, you may assume that for each nucleotide in a sequence, the probability of it to be A, T, C, or G is <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{4}">.
+![](fig/oligo-3.png)
 - Then, for a N bp sequence, the probability of it would be <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{4} ^{N}">.
 - Human genome is about 3 billion bp, so you may express the frequency of the sequence in the whole genome in this way: <img src="https://render.githubusercontent.com/render/math?math=f(N)=3\times 10^{9} \times \frac{1}{4} ^{N}">
 - The sequence being unique in the whole genome means: <img src="https://render.githubusercontent.com/render/math?math=f(N)\leq 1">
