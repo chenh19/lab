@@ -30,6 +30,7 @@ Second, 3 ways to calculate the Tm ([Understanding melting temperature (Tm)](htt
 DNA oligos are most frequently used in daily PCR experiments. Below are the basic principles for designing the oligos.
 
 #### Making a primer
+- Select a region in SanpGene, then add primer
 ![](fig/oligo-6.png)
 ![](fig/oligo-7.png)
 ![](fig/oligo-8.png)
