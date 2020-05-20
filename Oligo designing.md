@@ -8,6 +8,8 @@
 4. [*Prime editing gRNAs for variants knock-in*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#4-prime-editing-grnas-for-variants-knock-in)
 5. [*Gene panel designing for NGS*](https://github.com/chenh19/lab_training/blob/master/Oligo%20designing.md#5-gene-panel-designing-for-ngs)
 
+
+## 1. Background
 First of all, to understand why a ~20 bp sequence can be unique in the whole genome:  
 
 - In general, you may assume that for each nucleotide in a sequence, the probability of it to be A, T, C, or G is <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{4}">.
@@ -31,7 +33,7 @@ Second, 3 ways to calculate the Tm ([Understanding melting temperature (Tm)](htt
 > - [Annealing Temperature (Ta)](https://www.labce.com/spg1025560_annealing_temperature_ta.aspx) is slightly different from Tm, although they are often mis-used interchangeably.  
 > - Only include the aligned nucleotides for Tm calculation. Those nucleotides that doesn't align will not contribute to the Tm.
 
-## 1. Primers for PCR
+## 2. Primers for PCR
 DNA oligos are most frequently used in daily PCR experiments. Below are the basic principles for designing the oligos.
 
 #### Making a primer
@@ -95,7 +97,7 @@ For example, two 60 bp oligos with 21 bp complementary sequence. Each oligo is b
 ![](fig/oligo-32.png)
 
 
-## 2. Primers for sanger sequencing
+## 3. Primers for sanger sequencing
 #### PCR product sequencing
 - basically the same primers for PCR, but use **only one** primer for each sequencing (sequencing is unidirectional). If you want to sequence it in both forward and reverse manner, you can sequence twice.
 - Beginning region: poor quality
@@ -112,7 +114,7 @@ For example, two 60 bp oligos with 21 bp complementary sequence. Each oligo is b
 ![](fig/oligo-37.png)
 
 
-## 3. Guide RNAs for gene knock-out
+## 4. Guide RNAs for gene knock-out
 When doing CRISPR, you can transfect cells with either plasmids or more direct RNP (gRNA + Cas9 protein)
 CRISPR is mostly used in our lab for for gene knock-out or variant knock-in.
 Gene knock-out is relatively simple, just make an DSB and use NHEJ to introduce insertion or deletion and therefore cause frameshift (gRNAs are typically at the beginning of the gene, first 1 or 2 exons)
@@ -130,7 +132,7 @@ usually, one gRNA should be enough to cause small insertions or deletions. If la
 
 
 
-## 4. Prime editing gRNAs for variants knock-in
+## 5. Prime editing gRNAs for variants knock-in
 Another frequent application of CRISPR is variant knock-in. Still, you can use either plasmid or RNP. But RNP is preferred, because single clones with SNP are relatively difficult to select in the pool, the higher efficiency provided by RNP can be helpful.
 There are many ways to introduce a variants. We currently use the most recent prime editing. Traditional combination of [gRNAs and donor templates](https://horizondiscovery.com/en/applications/crispr-cas9/homology-directed-repair-with-a-plasmid-donor) are not covered in this tutorial. 
 Prime editing is relatively complicated but also very compact and high efficient. It doesn't use cell's HDR mechanism, but use reverse transcription instead.
@@ -152,7 +154,7 @@ Doesn't have RT and PBS, only introduce a nick, will not introduce any sequence 
 
 
 
-## 5. Gene panel designing for NGS
+## 6. Gene panel designing for NGS
 - [illumina Gene Panel & Arrary Finder](https://www.illumina.com/products/selection-tools/gene-panel-finder.html#/)
 ![](fig/oligo-1.png)
 > Usually you don't have to design the paneled oligos yourself.
