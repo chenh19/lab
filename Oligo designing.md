@@ -76,16 +76,16 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 ![](fig/oligo-27.png)
 
 #### Site-directed mutation
-[NEBaseChange](http://nebasechanger.neb.com/)
-> Typically used for circular plasmid. (After PCR, use DNA ligase to ligate the linear DNA and make it circular again)
-> This methods can also introduce insertion or deletion, just change the desired sequence in the NEBaseChanger.
+- [NEBaseChange](http://nebasechanger.neb.com/)
+- Typically used for circular plasmid. (After PCR, use DNA ligase to ligate the linear DNA and make it circular again)
+- This methods can also introduce insertion or deletion, just change the desired sequence in the NEBaseChanger.
 ![](fig/oligo-28.png)
 ![](fig/oligo-29.png)
 ![](fig/oligo-30.png)
 ![](fig/oligo-31.png)
 
 #### Extending short DNA oligos
-Oligo is usually less than 60 bp. If you want a slightly longer oligos, one way is to order [DNA ultramer](https://www.idtdna.com/pages/products/custom-dna-rna/dna-oligos/ultramer-dna-oligos), another way is to extend short oligos.
+- Oligo is usually less than 60 bp. If you want a slightly longer oligos, one way is to order [DNA ultramer](https://www.idtdna.com/pages/products/custom-dna-rna/dna-oligos/ultramer-dna-oligos), another way is to extend short oligos.
 For example, two 60 bp oligos with 21 bp complementary sequence. Each oligo is both template and primer in this case. Just do regular PCR and you can get the full length double strand DNA (99 bp in this case)
 ![](fig/oligo-32.png)
 
