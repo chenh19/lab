@@ -148,7 +148,8 @@ Doesn't have RT and PBS, only introduce a nick, will not introduce any sequence 
 
 
 ## 5. Gene panel designing for NGS
-[illumina Gene Panel & Arrary Finder](https://www.illumina.com/products/selection-tools/gene-panel-finder.html#/)
+- [illumina Gene Panel & Arrary Finder](https://www.illumina.com/products/selection-tools/gene-panel-finder.html#/)
+![](fig/oligo-1.png)
 > Usually you don't have to design the paneled oligos yourself.
 
 ## Appendix
