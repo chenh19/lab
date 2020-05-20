@@ -61,8 +61,10 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 
 #### Adding RE sites
 - In many situation, you would want to add Restriction Endonuclease cutting sites to both ends of your product, so that in can integrate your product into a vector later.
-[NEB RE list](https://www.neb.com/products/restriction-endonucleases)
-Taking [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) and [KpnI](https://www.neb.com/products/r0142-kpni#Product%20Information) as an example
+- [NEB RE list](https://www.neb.com/products/restriction-endonucleases)
+- Taking [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) and [KpnI](https://www.neb.com/products/r0142-kpni#Product%20Information) as an example
+![](fig/oligo-17.png)
+![](fig/oligo-18.png)
 
 #### Site-directed mutation
 [NEBaseChange](http://nebasechanger.neb.com/)
