@@ -41,6 +41,7 @@ DNA oligos are most frequently used in daily PCR experiments. Below are the basi
 - Product length: ```~500 bp```
 > - GC% is usually another specs mentioned in other tutorials, but if Tm and Length are within range, GC% will be good.  
 > Note: A set of primers can also amplify a single-strand DNA template. In the first cycle, only one primer will work, but once double strand DNA template forms, the primer will amplify the double strand DNA.
+> If you are doing genotyping, please remeber to use the genomic DNA map, not the mRNA/cDNA map
 
 #### Primers and probes for quantitative PCR (qPCR)
 - DNA Oligo amount: 2 or 3 (forward primer for one strand, reverse primer for the other strand, maybe a probe in between for either strand)
