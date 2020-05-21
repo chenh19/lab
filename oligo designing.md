@@ -1,4 +1,5 @@
 # DNA Oligo designing principles
+This tutorial focuses only on the designing of DNA oligos, which is mostly based on my bench experience and might be slightly different from text books or general protocols. Experiment principles for PCR, qPCR, sequencing, and CRISPR will not be discussed here.  
 *Version: v1.0.1*
 
 #### Table
