@@ -134,7 +134,7 @@ Your priority should always be protein prediction, if protein prediction is not 
 
 [**Provean Protein**](http://provean.jcvi.org/protein_batch_submit.php?species=human)
 - Use reference sequences starting with "NP_" for protein prediction as much as possible
-- If for one protein there are multiple sequences labeled with "NP_", select the shorter one, which is usually the more canonical one
+- If for one protein isoform there are multiple sequences labeled with "NP_", select the shorter one, which is usually the more canonical one
 
 - Input:
 ![](fig/2-18.png)
