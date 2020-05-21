@@ -221,8 +221,8 @@ Last but not least, you may calculate the [**odds ratio**](https://www.wikiwand.
 ## 8. Appendix
 - [**An online statistics calculator website**](https://www.socscistatistics.com/)
 
-- **Amino acids**  
+- **Amino acids:**  
 ![](fig/aa-1.png)  
 
-- **Amino acid codons**  
+- **Amino acid codons:**  
 ![](fig/aa-2.png)  
