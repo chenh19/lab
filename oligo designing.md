@@ -225,5 +225,5 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 ## 6. Appendix
 - Calculate molecular weight by sequence: [Calculator 1](http://molbiol.edu.ru/eng/scripts/01_07.html), [Calculator 2](https://www.bioinformatics.org/sms2/dna_mw.html)
-- **Amino acid codons**  
+- Amino acid codons
 ![](fig/aa-2.png)  
