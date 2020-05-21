@@ -51,6 +51,6 @@ The student should be proficient in at least one set of the advanced experiments
 - [Fast medium-scale data processing with Excel](https://github.com/chenh19/lab_training/blob/master/excel_tutorial.md)
 - [Fast large-scale data processing with BRStudio](https://github.com/chenh19/BRStudio)
 - [Preliminary *in silico* research (sturctural and functional predictions)](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md)
-- [DNA Oligo designing (for PCR, qPCR, sequencing, and CRISPR)](https://github.com/chenh19/lab_training/blob/master/oligo%20designing.md)
+- [DNA Oligo designing (for PCR, qPCR, sequencing, and CRISPR)](https://github.com/chenh19/lab_training/blob/master/oligo_designing.md)
 - **Training other students**
 - Other **upstream** projects
