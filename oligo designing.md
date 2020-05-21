@@ -1,5 +1,5 @@
 # DNA Oligo designing principles
-This tutorial focuses only on the designing of DNA oligos, which is mostly based on my bench experience and might be slightly different from text books or general protocols. Experiment principles for PCR, qPCR, sequencing, and CRISPR will not be discussed here.  
+This tutorial focuses only on the designing of DNA oligos, which is mostly based on my bench experience and might be slightly different from text books or general protocols. Basic principles of PCR, qPCR, sequencing, and CRISPR will not be discussed here.  
 *Version: v1.0.1*
 
 #### Table
@@ -11,113 +11,145 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 
 ## 1. Background
-First of all, to understand why a ~20 bp sequence can be unique in the whole genome:  
+**First of all**, to understand why a ~20 bp sequence can be unique in the whole genome:  
 
-- In general, you may assume that for each nucleotide in a sequence, the probability of it to be A, T, C, or G is <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{4}">.
+- In general, you may assume that for each nucleotide in a sequence, the probability of it to be A, T, C, or G is <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{4}">
 ![](fig/oligo-3.png)
-- Then, for a N bp sequence, the probability of it would be <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{4} ^{N}">.
+- Then, for a N bp sequence, the probability of it would be <img src="https://render.githubusercontent.com/render/math?math=\frac{1}{4} ^{N}">
 - Human genome is about 3 billion bp, so you may express the frequency of the sequence in the whole genome in this way: <img src="https://render.githubusercontent.com/render/math?math=f(N)=3\times 10^{9} \times \frac{1}{4} ^{N}">
 - The sequence being unique in the whole genome means: <img src="https://render.githubusercontent.com/render/math?math=f(N)\leq 1">
-- Solve and function and get the result: <img src="https://render.githubusercontent.com/render/math?math=N\geq 15.74">
+- Solve the function and get the result: <img src="https://render.githubusercontent.com/render/math?math=N\geq 15.74">
 - Therefore when <img src="https://render.githubusercontent.com/render/math?math=N \geq 16">, a sequence can be considered as unique in the whole genome
 
-Second, 3 ways to calculate the Tm ([Understanding melting temperature (Tm)](https://www.idtdna.com/pages/education/decoded/article/understanding-melting-temperature-(t-sub-m-sub-))):  
+**Second**, 3 ways to calculate the Tm ([Understanding melting temperature (Tm)](https://www.idtdna.com/pages/education/decoded/article/understanding-melting-temperature-(t-sub-m-sub-))):  
 
-- using SnapGene ([Download SnapGene](https://www.snapgene.com/snapgene-viewer/))
+- Using SnapGene ([Download SnapGene](https://www.snapgene.com/snapgene-viewer/))
 ![](fig/oligo-4.png)
-- using online calculator: [NEB Tm calculator for specific PCR enzymes/kits](http://tmcalculator.neb.com/)
+- Using online calculator: [NEB Tm calculator for specific PCR enzymes/kits](http://tmcalculator.neb.com/)
 ![](fig/oligo-9.png)
-- manual calculation: <img src="https://render.githubusercontent.com/render/math?math=Tm=2\times (A %2B T) %2B 4\times (G %2B C)">, where ```A, T, C, G``` means the counts of each nucleotide in the **single-strand** oligos
+- Manual calculation: <img src="https://render.githubusercontent.com/render/math?math=Tm=2\times (A %2B T) %2B 4\times (G %2B C)">, where ```A, T, C, G``` means the counts of each nucleotide in the **single-strand** oligos. Do **not** use this unless you don't have access to computers
 
 > Note:   
-> - For most cases (e.g., when using Phusion polymerase), SnapGene's Tm would be accurate. If you are using Q5 polymerase, make sure you use the **NEB Tm calculator** because Q5 buffer can increase the Tm.  
+> 
+> - In most cases (e.g., when using Phusion polymerase), SnapGene's Tm would be accurate. If you are using Q5 polymerase, make sure you use the **NEB Tm calculator** because Q5 buffer can increase the Tm.  
 > - [Annealing Temperature (Ta)](https://www.labce.com/spg1025560_annealing_temperature_ta.aspx) is slightly different from Tm, although they are often mis-used interchangeably.  
-> - Only include the aligned nucleotides for Tm calculation. Those nucleotides that doesn't align will not contribute to the Tm.
+> - Only include the **aligned nucleotides** for Tm calculation. Those nucleotides that doesn't align will not contribute to the Tm.  
+> - If you see a sequence without 5' and 3' annotated, by default **the left end is 5'** and **the right end is 3'**.
 
 ## 2. Primers for PCR
-DNA oligos are most frequently used in daily PCR experiments. Below are the basic principles for designing the oligos.
-
-### i. Making a primer
-- Select a region in SanpGene, then add primer
+- DNA oligos are most frequently used in daily PCR experiments. There are different designing skills for different situations
+- First of all, here is an example of making a primer in SnapGene: just select a region and use the "Add primer" tool
 ![](fig/oligo-6.png)
 ![](fig/oligo-7.png)
 ![](fig/oligo-8.png)
 
-### ii. Primers for regular PCR
+### i. Primer sets for regular PCR
 - DNA Oligo amount: 2 (forward primer for one strand, reverse primer for the other strand)
-- Primer Tm: ```58-60 °C```
-- Primer length: ```16-32 bp```
-- Product length: ```~500 bp```
+- Primer Tm: ```58-60 °C``` (This saves time because for every PCR you can just set the annealing temp of your PCR program to 58°C without going back to check your primer design)
+- Primer length: ```16-32 bp``` (From the calculation in the background you can understand why the minimum length is 16 bp)
+- Product length (coverage): ```~500 bp``` (500 bp is usually good for one-time Sanger sequencing)
 ![](fig/oligo-10.png)
 ![](fig/oligo-11.png)
 ![](fig/oligo-12.png)
 
-> - GC% is usually another specs mentioned in other tutorials, but if Tm and Length are within range, GC% will be good.  
-> Note: A set of primers can also amplify a single-strand DNA template. In the first cycle, only one primer will work, but once double strand DNA template forms, the primer will amplify the double strand DNA.
-> If you are doing genotyping, please remeber to use the genomic DNA map, not the mRNA/cDNA map
+> Note:   
+> 
+> - **GC%** is usually another specs mentioned in other tutorials, but if Tm and Length are within range, GC% will be good and you don't have to worry.  
+> - A set of primers can also amplify **single-strand DNA templates**. In the first cycle, only one primer will work, but once double-strand DNA template forms, both primers will work and amplify the double-strand DNA.
+> - If you are doing genotyping, please remeber to use the **genomic DNA maps** for primer designing, not the mRNA/cDNA maps.
 
-### iii. Primers and probes for quantitative PCR (qPCR)
+### ii. Primer and probe sets for qPCR
 - DNA Oligo amount: 2 or 3 (forward primer for one strand, reverse primer for the other strand, maybe a probe in between for either strand)
-- Primer Tm: ```58-60 °C```
+- Primer Tm: ```58-60 °C``` (qPCR usually uses a 2-step program, where the temp of the second step is typically set to 60 °C)
 - Primer length: ```16-32 bp```
-- Product length: ```100-200 bp``` (for fast qPCR process)
+- Product length (coverage): ```100-200 bp``` (for fast qPCR process)
 - Probe Tm: ```5-10 °C higher than primers' Tm``` (some qPCR kits use SYBR and don't require probes, while some other qPCR kits use fluorescent probes, such as Taqman)
 ![](fig/oligo-13.png)
 ![](fig/oligo-14.png)
 ![](fig/oligo-15.png)
 ![](fig/oligo-16.png)
 
-### iv. Adding RE sites
-- In many situation, you would want to add Restriction Endonuclease cutting sites to both ends of your product, so that in can integrate your product into a vector later.
-- [NEB RE list](https://www.neb.com/products/restriction-endonucleases). You can also show all the available RE sites on your map
+### iii. Adding RE sites
+- In some cases, you would want to add Restriction Endonuclease cutting sites to both ends of your product, so that it can be later integrated into an expression vector
+- NEB has a list of all its available REs: [NEB RE list](https://www.neb.com/products/restriction-endonucleases)
+- In SnapGene, you can also show all the available RE sites on your gene map: 
 ![](fig/oligo-19.png)
 ![](fig/oligo-20.png)
 ![](fig/oligo-22.png)
-- Taking [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) and [KpnI](https://www.neb.com/products/r0142-kpni#Product%20Information) as an example
+- Here, taking [EcoRI](https://www.neb.com/products/r0101-ecori#Product%20Information) and [KpnI](https://www.neb.com/products/r0142-kpni#Product%20Information) as an example of adding RE sites to PCR products. Here are the RE sites of both enzymes:
 ![](fig/oligo-17.png)
 ![](fig/oligo-18.png)
+- You can just add the RE sites to your primers like this:
 ![](fig/oligo-23.png)
 ![](fig/oligo-24.png)
 ![](fig/oligo-25.png)
-- How the PCR will work
+
+> Note:
+>
+> - Always add 2 random nucleotides before your cutting sites. This is to trick the enzymes into believing that they are binding to the middle of a DNA instead of the ends.
+> - When adding the cutting site sequences to the primers, you don't necessarily add the entire sequences, usually you can utilize a few nucleotides in the template sequences.
+> - Note that only the aligned nucleotides will contribute to the Tm.
+
+- Illustration of how the PCR will work:
 ![](fig/oligo-26.png)
 ![](fig/oligo-27.png)
 
-### v. Site-directed mutation
-- [NEBaseChange](http://nebasechanger.neb.com/)
-- Typically used for circular plasmid. (After PCR, use DNA ligase to ligate the linear DNA and make it circular again)
-- This methods can also introduce insertion or deletion, just change the desired sequence in the NEBaseChanger.
+### iv. Site-directed mutation
+- Use the tool, [NEBaseChange](http://nebasechanger.neb.com/). Do **not** manually design site-directed mutation primers unless the ones from NEB fail
+- This is typically used for **circular plasmids**. After PCR, the amplified DNA will be linear and you can use **DNA ligase** to make it circular again
+- This methods can also introduce **insertion** or **deletion** into the plasmids. To design insertion or deletion primers, you can just change the **Desired sequence** in the NEBaseChanger
 ![](fig/oligo-28.png)
 ![](fig/oligo-29.png)
 ![](fig/oligo-30.png)
+- How the site-directed mutation primers look like in SnapGene:
 ![](fig/oligo-31.png)
 
-### vi. Extending short DNA oligos
-- Oligo is usually less than 60 bp. If you want a slightly longer oligos, one way is to order [DNA ultramer](https://www.idtdna.com/pages/products/custom-dna-rna/dna-oligos/ultramer-dna-oligos), another way is to extend short oligos.
-For example, two 60 bp oligos with 21 bp complementary sequence. Each oligo is both template and primer in this case. Just do regular PCR and you can get the full length double strand DNA (99 bp in this case)
+### v. Extending short DNA oligos
+- DNA Oligo is usually shorter than 60 bp. If you want slightly longer oligos, one way is to order [DNA ultramers](https://www.idtdna.com/pages/products/custom-dna-rna/dna-oligos/ultramer-dna-oligos) from companies, another way is to extend short oligos
+- For example, two 60 bp oligos here with 21 bp complementary sequence. Each oligo is both template and primer in this case. Just do a regular PCR and you'll get the full length double-strand DNA (99 bp in this case)
 ![](fig/oligo-32.png)
+
+> Note:
+>
+> - For the complementary sequence, design with the same principles for regular PCR primers
+
 
 
 ## 3. Primers for sequencing
-### i. Sanger sequencing for PCR products
-- basically the same primers for PCR, but use **only one** primer for each sequencing (sequencing is unidirectional). If you want to sequence it in both forward and reverse manner, you can sequence twice.
-- Beginning region: poor quality
+### i. Sanger sequencing for small PCR products
+- Primers for sanger sequencing are basically the same as the primers for regular PCR
+- When mixing sequencing samples and primers, always use **only one** primer for each sample (sequencing is unidirectional). If you want to sequence it in both forward and reverse manner, you can sequence twice in separate tubes
+- Here are an example of sequencing results. Beginning region (<60 bp): poor quality
 ![](fig/oligo-33.png)
-- Middle region: good quality
+- Middle region (60-600 bp): good quality (clean and sharp signal peaks, low background noise)
 ![](fig/oligo-34.png)
-- End: poor quality
+- End region (>600 bp): poor quality (blurry signal, high background noise)
 ![](fig/oligo-35.png)
 
-### ii. Sange sequencing for large regions
-- usually 300-400 between the primes (non-overlapping region)
-- overlap the beginning and the end of each fragment
+> Note:
+>
+> - The variants detected in the poor quality regions should be considered as **false** by default.
+
+
+### ii. Sanger sequencing for large regions
+- To avoid false variants, use the overlapping design
+- Typically ```300-400 bp``` between the primes (non-overlapping region)
+- The beginning and the end of each sequencing fragment should be overlapped by another sequencing fragment
 ![](fig/oligo-36.png)
+- Here is an example of sequencing results aligned to the template:
 ![](fig/oligo-37.png)
 
+> Note:
+>
+> - Any variant **shows up for only once (not overlapped)** should be considered as **false**.
+
 ### iii. Gene panel designing for NGS
-- [illumina Gene Panel & Arrary Finder](https://www.illumina.com/products/selection-tools/gene-panel-finder.html#/)
+- Paneled-NGS uses hundreds of primers for targeted amplicons. There are many panels available online designed by companies or by community, here is an example: [illumina Gene Panel & Arrary Finder](https://www.illumina.com/products/selection-tools/gene-panel-finder.html#/)
 ![](fig/oligo-1.png)
-> Usually you don't have to design the paneled oligos yourself.
+
+> Note:
+> 
+> - Usually you don't have to design the paneled oligos yourself.
 
 
 ## 4. Guide RNAs for gene knock-out
