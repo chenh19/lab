@@ -111,7 +111,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 > Note:
 >
-> - For the complementary sequence, design with the same principles for regular PCR primers
+> - For the complementary sequence, design with the same principles for regular PCR primers.
 
 
 
@@ -149,59 +149,78 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 > Note:
 > 
-> - Usually you don't have to design the paneled oligos yourself.
+> - Usually you don't have to design the paneled oligos by yourself.
 
 
 ## 4. Guide RNAs for gene knock-out
-When doing CRISPR, you can transfect cells with either plasmids or more direct RNP (gRNA + Cas9 protein)
-CRISPR is mostly used in our lab for for gene knock-out or variant knock-in.
-Gene knock-out is relatively simple, just make an DSB and use NHEJ to introduce insertion or deletion and therefore cause frameshift (gRNAs are typically at the beginning of the gene, first 1 or 2 exons)
-
+- CRISPR is mostly used for for gene knock-out and variant knock-in in our lab
+- Gene knock-out is relatively simple since you don't need to design a repair template. You just need to make a double-strand break and then use cell's NHEJ mechanism to introduce a small insertion or deletion to the gene, which usually causes frameshift. Usually the gRNAs are designed to target the first or the second exon of the gene
+- When doing CRISPR, you can transfect cells with either plasmids or more direct RNP (gRNA + Cas9 protein)
 
 ### i. Making gRNA plasmid
-- you may follow this protocl
+- First, you will need to select a spacer (20 bp sequence before a PAM, *NGG*). It is recommended to use a gRNA designing tool to get the highest efficiency. [Feng Zhang's lab](https://zlab.bio/guide-design-resources) has well listed these tools, among which [IDT](https://www.idtdna.com/site/order/designtool/index/CRISPR_CUSTOM) is most frequently used by our lab
+![](fig/oligo-39.png)
+- When selecting spacers for gene knock-out, the general principle is to select the ones with as high **off-target** score as possible and not too low on-target score. However, it can depends on the experimental needs. Besides, **predesigned** gRNAs are usually safer than custom ones because people has test them 
+![](fig/oligo-40.png)
+- Usually, one gRNA should be enough to cause small insertions or deletions. If large deletion is needed, you may design two gRNAs at both ends of the desired deletion
+- Second, you may follow this protocol to generate the gRNA plasmid. Note that the first nucleotide of the spacer needs to be replaced by *G*
 ![](fig/oligo-2.png)
 
-- when selecting the spacers, [Feng Zhang's lab](https://zlab.bio/guide-design-resources), among which IDT is most frequently used by our lab since IDT makes DNA/RNA oligos
-usually, one gRNA should be enough to cause small insertions or deletions. If large deletion is needed, you may design two gRNAs at both ends of the desired deletion.
+> Note:
+>
+> - Plasmids can be toxic to cells.
+> - It can take some time for the plasmids to express in the cells.
+> - You may also use an antibiotic-resistant donor plasmid when transfecting. The antibiotic-resistant gene can be inserted into the cutting sites and therefore make it easier for later selection.
 
 ### ii. DNA oligo/ultramer for *in vitro* transcription
-- T7 promoter
-- Spacer
-- Scaffold
+- You may directly order a single-strand DNA oligo or ultramer, amplify it by a regular PCR, and then do *in vitro* transcription to get the gRNA
+![](fig/oligo-38.png)
 
+- T7 promoter: ```aagc-TAATACGACTCACTATA-GG-``` (It's recommended to add 4 bp before the promoter; *GG* after the promoter is necessary for reasonable yields of *in vitro* transcription)
+- Spacer: 20 bp sequence before PAM (use a gRNA designing tool to select the spacer; it's recommended **not** to replace the first nucleotide with *G*)
+- Scaffold: ```-GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC``` (You **don't** need to change this unless you are changing to enzymes other than Cas9)
+
+> Note:
+>
+> - Heating the gRNA and then cooling it down can help the scaffold fold into the structure that Cas9 protein can bind.
+> - RNP is much less toxic to cells than plasmids.
+> - *In vitro* transcription saves time because it skips the molecular cloning procedures.
+> - gRNA is still a type of RNA and is susceptible to RNases. **Capping** and **poly-A tailing** can significantly stabilize the gRNA and therefore increase the transfection efficiency. 
 
 
 ## 5. Prime editing gRNAs for variants knock-in
-Another frequent application of CRISPR is variant knock-in. Still, you can use either plasmid or RNP. But RNP is preferred, because single clones with SNP are relatively difficult to select in the pool, the higher efficiency provided by RNP can be helpful.
-There are many ways to introduce a variants. We currently use the most recent prime editing. Traditional combination of [gRNAs and donor templates](https://horizondiscovery.com/en/applications/crispr-cas9/homology-directed-repair-with-a-plasmid-donor) are not covered in this tutorial. 
-Prime editing is relatively complicated but also very compact and high efficient. It doesn't use cell's HDR mechanism, but use reverse transcription instead.
-Prime editing uses two gRNA, one introduce the variant, another is for the non-edited strand, which is to increase the variant introduction efficiency
+- Another frequent application of CRISPR is variant knock-in. Still, you can use either plasmid or RNP. But RNP is preferred because single clones with SNP are relatively difficult to select in the mixed cell pool, and the higher efficiency provided by RNP can be helpful
+- There are many ways to introduce a variants. We currently use the tech coming out in 2019, which is called [Prime editing](https://doi.org/10.1038/s41586-019-1711-4). Traditional combination of [gRNAs and HDR repair templates](https://blog.addgene.org/crispr-101-homology-directed-repair) will not be discussed in this tutorial
+![](fig/oligo-41.png)
+- Prime editing is relatively complicated but also very compact and high efficient. It doesn't use cell's HDR mechanism, but uses reverse transcription instead
+![](fig/oligo-42.png)
+- Prime editing 3 uses two gRNAs, one introduces the variant, another introduces a nick on the non-edited strand, which is to increase the editing efficiency
 
 ### i. pegRNA for the strand to be edited
-- T7 promoter
-- Spacer
-- Scaffold
-- RT (reverse transcription template) + PBS (primer binding site)
-- *in vitro* transcription, capping and tailing
-> When designing pegRNA, the spacer near the edited site might not have high scores, which is OK, because prime editing uses nickase. If it cut offsite, it will not introduce the variant because the RT won't align, and the nick can be ligated.
-> Utilizing or designing RE cutting site for variant detection
+- T7 promoter: ```aagc-TAATACGACTCACTATA-GG-```
+- Spacer: 20 bp sequence before PAM (it should be as close to the edited site as possible)
+- Scaffold: ```-GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC-```
+- RT (reverse transcription template): no less than 7 bp before the cutting site (5' to 3' direction); may also synonymously edit the PAM site if applicable; avoid *C* at the 5' of RT (the 5' of RT is connected to the Scaffold, be careful with the direction)
+- PBS (primer binding site): 8-15 bp after the cutting site (also 5' to 3' direction; if 8-15 bp is not easy to determine, check the Tm in SnapGene, ideally it should be 40-45 °C)
+
+
+> Note:
+>
+> - Note that the cutting site of Cas9 nuclease/nickase is between the **3** and **4** nucleotides upstream of the PAM site. If the the first nucleotide of the PAM site is labeled as +1, the cutting site would be between -3 and -4 nucleotides (5' to 3' direction).
+> - Note that Cas9 H840A nickase cuts the **opposite** strand of the *NGG* strand.
+> - Spacer longer than 20 bp will **not** increase the affinity, therefore always use 20 bp. Don't worry about the Tm for spacers.
+> - When designing pegRNAs, the spacers near the edited sites might not have high scores in gRNA designing tools (e.g., [IDT CRISPR-Cas9 gRNA checker](https://www.idtdna.com/site/order/designtool/index/CRISPR_CUSTOM)), which is OK. Prime editing uses nickase and if it cut offsite, it will not introduce the variant because the PBS won't align.
+> - When designing the RT, you should observe whether your editing can introduce or remove any RE cutting sites. You may also artificially introduce synonymous variants to the template to do that. RE sites will be beneficial in the later clone selection process.
+> - When adding the RT and PBS, be careful with the direction.
+> - **Capping** and **poly-A tailing** are strongly recommended for *in vitro* transcription.
 
 ### ii. gRNA for the non-edited strand 
-PE3b is not practical in many cases. Therefore focusing on PE3 only here.
-The secondary gRNA should be 40-90 bp away from the edited site
-Doesn't have RT and PBS, only introduce a nick, will not introduce any sequence change
-
-
-
+- PE3b is not practical in many cases. Therefore, this tutorial only focuses on PE3
+- The secondary gRNAs should be 40-90 bp away from the edited site
+- The secondary gRNAs only has T7 promoter, spacer, and scaffold, and don't have RT and PBS. They will only introduce a nick  and will not introduce any sequence changes
+- An example of pegRNA designing:
+![](fig/oligo-43.png)
 
 
 ## Appendix
-
-Tm calculator for specific PCR enzymes/kits:
-[Tm calculator](http://tmcalculator.neb.com/)
-
-Calculate molecular weight by sequence:
-
-[Calculator 1](http://molbiol.edu.ru/eng/scripts/01_07.html)
-[Calculator 2](https://www.bioinformatics.org/sms2/dna_mw.html)
+- Calculate molecular weight by sequence: [Calculator 1](http://molbiol.edu.ru/eng/scripts/01_07.html), [Calculator 2](https://www.bioinformatics.org/sms2/dna_mw.html)
