@@ -52,6 +52,5 @@ The student should be proficient in at least one set of the advanced experiments
 - [Fast large-scale data processing with BRStudio](https://github.com/chenh19/BRStudio)
 - [Preliminary *in silico* research (sturctural and functional predictions)](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md)
 - [DNA Oligos designing (for PCR, qPCR, sequencing, and CRISPR)](https://github.com/chenh19/lab_training/blob/master/oligo%20designing.md)
-- Genetic engineering and cell line generating pipeline (Prime-CT-CRISPR system)
 - **Training other students**
 - Other **upstream** projects
