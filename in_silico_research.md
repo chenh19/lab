@@ -86,7 +86,7 @@ Once you have checked the quality and context of the variant, you may retrieve m
 - You may download the sequences for the following steps. You may open the sequence files with [SnapGene Viewer](https://www.snapgene.com/snapgene-viewer/)
 ![](fig/2-12.png)
 
-[**NCBI PubMed**](https://www.ncbi.nlm.nih.gov/pubmed/) for existing functional studies
+[**NCBI PubMed**](https://pubmed.ncbi.nlm.nih.gov/) for existing functional studies
 
 - You may search for previous research on the variants that you are interested in
 - The most common search format is: ```gene amino_acid_change disease``` (e.g., ```JAK2 V617F Myeloproliferative Neoplasm```)
