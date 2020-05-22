@@ -119,7 +119,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 ## 3. Primers for sequencing
 ### i. Sanger sequencing for small PCR products
 - Primers for sanger sequencing are basically the same as the primers for regular PCR
-- Typically you would want the PCR product to be ```~500 bp```, so that you get get the best sequencing quality with just one-time sequencing
+- Typically you would want the PCR product to be ```~500 bp```, so that you can get the best sequencing quality with just one-time sequencing
 - When mixing sequencing samples and primers, always use **only one** primer for each sample (sequencing is unidirectional). If you want to sequence it in both forward and reverse manner, you can sequence twice in separate tubes
 - Here are an example of sequencing results. Beginning region (<60 bp): poor quality
 ![](fig/oligo-33.png)
