@@ -183,7 +183,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 > Note:
 >
-> - T7 promoter is only for *in vitro* transcription. If you are directly ording RNA, you don't need it.
+> - T7 promoter is only for *in vitro* transcription. If you are directly ordering RNA, you don't need it.
 > - Heating the gRNA and then cooling it down can help the scaffold fold into the structure that Cas9 protein can bind.
 > - RNP is much less toxic to cells than plasmids.
 > - *In vitro* transcription saves time because it skips the molecular cloning procedures.
@@ -208,7 +208,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 > Note:
 >
-> - T7 promoter is only for *in vitro* transcription. If you are directly ording RNA, you don't need it.
+> - T7 promoter is only for *in vitro* transcription. If you are directly ordering RNA, you don't need it.
 > - Note that the cutting site of Cas9 nuclease/nickase is between the **3** and **4** nucleotides upstream of the PAM site. If the the first nucleotide of the PAM site is labeled as +1, the cutting site would be between -3 and -4 nucleotides (5' to 3' direction).
 > - Note that Cas9 H840A nickase cuts the **opposite** strand of the *NGG* strand.
 > - Spacer longer than 20 bp will **not** increase the affinity, therefore always use 20 bp. Don't worry about the Tm for spacers.
