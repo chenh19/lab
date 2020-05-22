@@ -47,7 +47,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 ### i. Primer sets for regular PCR
 - DNA Oligo amount: 2 (forward primer for one strand, reverse primer for the other strand)
 - Primer Tm: ```58-60 °C``` (This saves time because for every PCR you can just set the annealing temp of your PCR program to 58°C without going back to check your primer design)
-- Primer length: ```16-32 bp``` (From the calculation in the background you can understand why the minimum length is 16 bp)
+- Primer length: ```16-32 nt``` (From the calculation in the background you can understand why the minimum length is 16 bp)
 - Product length (coverage): ```~500 bp``` (500 bp is usually good for one-time Sanger sequencing)
 ![](fig/oligo-10.png)
 ![](fig/oligo-11.png)
@@ -62,7 +62,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 ### ii. Primer and probe sets for qPCR
 - DNA Oligo amount: 2 or 3 (forward primer for one strand, reverse primer for the other strand, maybe a probe in between for either strand)
 - Primer Tm: ```58-60 °C``` (qPCR usually uses a 2-step program, where the temp of the second step is typically set to 60 °C)
-- Primer length: ```16-32 bp```
+- Primer length: ```16-32 nt```
 - Product length (coverage): ```100-200 bp``` (for fast qPCR process)
 - Probe Tm: ```5-10 °C higher than primers' Tm``` (some qPCR kits use SYBR and don't require probes, while some other qPCR kits use fluorescent probes, such as Taqman)
 ![](fig/oligo-13.png)
@@ -106,8 +106,8 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 ![](fig/oligo-31.png)
 
 ### v. Extending short DNA oligos
-- DNA Oligo is usually shorter than 60 bp. If you want slightly longer oligos, one way is to order [DNA ultramers](https://www.idtdna.com/pages/products/custom-dna-rna/dna-oligos/ultramer-dna-oligos) from companies, another way is to extend short oligos
-- For example, two 60 bp oligos here with 21 bp complementary sequence. Each oligo is both template and primer in this case. Just do a regular PCR and you'll get the full length double-strand DNA (99 bp in this case)
+- DNA Oligo is usually shorter than 60 nt. If you want slightly longer oligos, one way is to order [DNA ultramers](https://www.idtdna.com/pages/products/custom-dna-rna/dna-oligos/ultramer-dna-oligos) from companies, another way is to extend short oligos
+- For example, two 60 nt oligos here with 21 bp complementary sequence. Each oligo is both template and primer in this case. Just do a regular PCR and you'll get the full length double-strand DNA (99 bp in this case)
 ![](fig/oligo-32.png)
 
 > Note:
