@@ -178,7 +178,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 ![](fig/oligo-38.png)
 
 - T7 promoter: ```aagc-TAATACGACTCACTATA-GG-``` (It's recommended to add **random** 4 nucleotides before the promoter; *GG* after the promoter is necessary for reasonable yields of *in vitro* transcription)
-- Spacer: 20 bp sequence before PAM (use a gRNA designing tool to select the spacer; it's recommended **not** to replace the first nucleotide with *G*)
+- Spacer: ```20 bp``` sequence before PAM (use a gRNA designing tool to select the spacer; it's recommended **not** to replace the first nucleotide with *G*)
 - Scaffold: ```-GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC``` (You **don't** need to change this unless you are changing to enzymes other than Cas9)
 
 > Note:
@@ -200,7 +200,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 ### i. pegRNA for the strand to be edited
 - T7 promoter: ```aagc-TAATACGACTCACTATA-GG-``` (It's recommended to add **random** 4 nucleotides before the promoter; *GG* after the promoter is necessary for reasonable yields of *in vitro* transcription)
-- Spacer: 20 bp sequence before PAM (it should be as close to the edited site as possible)
+- Spacer: ```20 bp``` sequence before PAM (it should be as close to the edited site as possible)
 - Scaffold: ```-GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC-``` (You **don't** need to change this unless you are changing to enzymes other than Cas9)
 - RT (reverse transcription template): no less than 7 nt before the cutting site (5' to 3' direction); may also synonymously edit the PAM site if applicable; avoid *C* at the 5' of RT (the 5' of RT is connected to the Scaffold, be careful with the direction)
 - PBS (primer binding site): 8-15 nt after the cutting site (also 5' to 3' direction; if 8-15 nt is not easy to determine, check the Tm in SnapGene, ideally it should be 40-45 °C)
