@@ -233,7 +233,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 > Note:
 >
-> - In this example, the genotyping primers are designed with the principles for the primers for regular PCR.
+> - In this example, the genotyping primers are designed with the principles for the primers for regular PCR, and they cover a region of ~500 bp.
 
 ## 6. Appendix
 - Calculate molecular weight by sequence: [Calculator-1](http://molbiol.edu.ru/eng/scripts/01_07.html), [Calculator-2](https://www.bioinformatics.org/sms2/dna_mw.html)
