@@ -208,7 +208,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 - **T7 promoter**: ```aagc-TAATACGACTCACTATA-GG-``` (It's recommended to add **random** 4 nucleotides before the promoter; *GG* after the promoter is necessary for reasonable yields of *in vitro* transcription)
 - **Spacer**: ```20 bp``` sequence before PAM (it should be as close to the edited site as possible)
 - **Scaffold**: ```-GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC-``` (You **don't** need to change this unless you are changing to enzymes other than Cas9)
-- **RT** (reverse transcription template): no less than ```7 nt``` before the cutting site (5' to 3' direction); there is no strict resrtiction for the length of the RT, but you should try do make it as short as possible (the longer the DNA oligos/ultramers, the harder to make and the more expensive), usually RT within ```20 nt``` is good; may also synonymously edit the PAM site if applicable; avoid *C* at the 5' of RT (the 5' of RT is connected to the Scaffold, be careful with the direction)
+- **RT** (reverse transcription template): no less than ```7 nt``` before the cutting site (5' to 3' direction); there is no strict resrtiction for the length of the RT, but you should try do make it as short as possible (the longer the DNA oligos/ultramers, the harder to make and the more expensive), usually RT within ```20 nt``` is good; you may also synonymously edit the PAM site if applicable; avoid *C* at the 5' of RT (the 5' of RT is connected to the Scaffold, be careful with the direction)
 - **PBS** (primer binding site): ```8-15 nt``` after the cutting site (also 5' to 3' direction; if 8-15 nt is not easy to determine, check the Tm in SnapGene, ideally it should be ```40-45 °C```; PBS can anneal with the spacer, so when you can reach the Tm range, the **shorter** the PBS the better)
 
 
@@ -222,7 +222,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 > - When designing the RT, you should observe whether your editing can introduce or remove any RE cutting sites. You may also artificially introduce synonymous variants to the template to do that. RE sites will be beneficial in the later clone selection process. Ideally, the selected RE should only cut once in the genotyping region.
 > - When adding the RT and PBS, be careful with the direction.
 > - **Capping** and **poly-A tailing** are strongly recommended for *in vitro* transcription.
-> - If you are labeling the variants in your SnapGene map, make sure you use the top strand sequence to avoid confusion.
+> - If you are labeling the variants in your SnapGene map, make sure you're labeling with the top strand sequence to avoid confusion.
 
 ### ii. gRNA for the non-edited strand 
 - PE3b is not practical in many cases. Therefore, this tutorial only focuses on PE3
