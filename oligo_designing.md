@@ -55,6 +55,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 > Note:   
 > 
+> - You may first deign a primer within the Tm range and then check whether the length is with the range as well.
 > - **GC%** is usually another specs mentioned in other tutorials, but if Tm and Length are within range, GC% will be good and you don't have to worry.  
 > - A set of primers can also amplify **single-strand DNA templates**. In the first cycle, only one primer will work, but once double-strand DNA template forms, both primers will work and amplify the double-strand DNA.
 > - If you are doing genotyping, please remeber to use the **genomic DNA maps** for primer designing, not the mRNA/cDNA maps.
@@ -188,7 +189,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 > - Heating the gRNA and then cooling it down can help the scaffold fold into the structure that Cas9 protein can bind.
 > - RNP is much less toxic to cells than plasmids.
 > - *In vitro* transcription saves time because it skips the molecular cloning procedures.
-> - gRNA is still a type of RNA and is susceptible to RNases. **Capping** and **poly-A tailing** can significantly stabilize the gRNA and therefore increase the transfection efficiency. 
+> - gRNA is still a type of RNA and is susceptible to RNases. **Capping** and **poly-A tailing** can significantly stabilize the gRNA and therefore increase the transfection efficiency.
 
 
 ## 5. Prime editing gRNAs for variants knock-in
@@ -203,8 +204,8 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 - T7 promoter: ```aagc-TAATACGACTCACTATA-GG-``` (It's recommended to add **random** 4 nucleotides before the promoter; *GG* after the promoter is necessary for reasonable yields of *in vitro* transcription)
 - Spacer: ```20 bp``` sequence before PAM (it should be as close to the edited site as possible)
 - Scaffold: ```-GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC-``` (You **don't** need to change this unless you are changing to enzymes other than Cas9)
-- RT (reverse transcription template): no less than 7 nt before the cutting site (5' to 3' direction); may also synonymously edit the PAM site if applicable; avoid *C* at the 5' of RT (the 5' of RT is connected to the Scaffold, be careful with the direction)
-- PBS (primer binding site): 8-15 nt after the cutting site (also 5' to 3' direction; if 8-15 nt is not easy to determine, check the Tm in SnapGene, ideally it should be 40-45 °C)
+- RT (reverse transcription template): no less than ```7 nt``` before the cutting site (5' to 3' direction); may also synonymously edit the PAM site if applicable; avoid *C* at the 5' of RT (the 5' of RT is connected to the Scaffold, be careful with the direction)
+- PBS (primer binding site): ```8-15 nt``` after the cutting site (also 5' to 3' direction; if 8-15 nt is not easy to determine, check the Tm in SnapGene, ideally it should be ```40-45 °C```; PBS can anneal with the spacer, so when you can reach the Tm range, the **shorter** the PBS the better)
 
 
 > Note:
@@ -217,6 +218,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 > - When designing the RT, you should observe whether your editing can introduce or remove any RE cutting sites. You may also artificially introduce synonymous variants to the template to do that. RE sites will be beneficial in the later clone selection process. Ideally, the selected RE should only cut once in the genotyping region.
 > - When adding the RT and PBS, be careful with the direction.
 > - **Capping** and **poly-A tailing** are strongly recommended for *in vitro* transcription.
+> - If you are labeling the variants in your SnapGene map, make sure you use the top strand sequence to avoid confusion.
 
 ### ii. gRNA for the non-edited strand 
 - PE3b is not practical in many cases. Therefore, this tutorial only focuses on PE3
@@ -225,6 +227,9 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 - A complete example of pegRNA designing:
 ![](fig/oligo-43.png)
 
+> Note:
+>
+> - In this example, the genotyping primers are designed with the principles for the primers for regular PCR.
 
 ## 6. Appendix
 - Calculate molecular weight by sequence: [Calculator-1](http://molbiol.edu.ru/eng/scripts/01_07.html), [Calculator-2](https://www.bioinformatics.org/sms2/dna_mw.html)
