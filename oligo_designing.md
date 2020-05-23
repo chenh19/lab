@@ -219,6 +219,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 > - Note that Cas9 H840A nickase cuts the **opposite** strand of the *NGG* strand.
 > - Spacer longer than 20 bp will **not** increase the affinity, therefore always use 20 bp. Don't worry about the Tm for spacers.
 > - When designing pegRNAs, the spacers near the edited sites might not have high scores in gRNA designing tools (e.g., [IDT CRISPR-Cas9 gRNA checker](https://www.idtdna.com/site/order/designtool/index/CRISPR_CUSTOM)), which is OK. Prime editing uses nickase and if it cut offsite, it will not introduce the variant because the PBS won't align.
+> - Although PAM is 3 nt long, it's not necessarily in frame with the amino acid coding. When you are trying to use synonymous variants to remove the PAM, make sure that your synonymous variants are not for the 3 nt PAM but for those in-frame amino acid codons.
 > - When designing the RT, you should observe whether your editing can introduce or remove any RE cutting sites. You may also artificially introduce synonymous variants to the template to do that. RE sites will be beneficial in the later clone selection process. Ideally, the selected RE should only cut once in the genotyping region.
 > - When adding the RT and PBS, be careful with the direction.
 > - **Capping** and **poly-A tailing** are strongly recommended for *in vitro* transcription.
