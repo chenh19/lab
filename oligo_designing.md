@@ -1,6 +1,6 @@
 # DNA Oligo designing principles
 This tutorial focuses only on the designing of DNA oligos, which is mostly based on my bench experience and might be slightly different from text books or general protocols. Basic principles of PCR, qPCR, sequencing, and CRISPR will not be discussed here.  
-*Version: v1.0.4*
+*Version: v1.1.0*
 
 #### Table
 1. [*Background*](https://github.com/chenh19/lab_training/blob/master/oligo_designing.md#1-background)
@@ -183,7 +183,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 - You may directly order a single-strand DNA oligo or ultramer, amplify it by a regular PCR, and then do *in vitro* transcription to get the gRNA
 ![](fig/oligo-38.png)
 
-- **T7 promoter**: ```aagc-TAATACGACTCACTATA-GG-``` (It's recommended to add **random** 4 nucleotides before the promoter; *GG* after the promoter is necessary for reasonable yields of *in vitro* transcription)
+- **T7 promoter**: ```aagc-TAATACGACTCACTATA-GG-``` (It's recommended to add 4 **random** nucleotides before the promoter; *GG* after the promoter is necessary for reasonable yields of *in vitro* transcription)
 - **Spacer**: ```20 bp``` sequence before PAM (use a gRNA designing tool to select the spacer; it's recommended **not** to replace the first nucleotide with *G*)
 - **Scaffold**: ```-GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC``` (You **don't** need to change this unless you are changing to enzymes other than Cas9)
 
@@ -205,7 +205,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 - Prime editing 3 uses two gRNAs, one introduces the variant, another introduces a nick on the non-edited strand, which is to increase the editing efficiency
 
 ### i. pegRNA for the strand to be edited
-- **T7 promoter**: ```aagc-TAATACGACTCACTATA-GG-``` (It's recommended to add **random** 4 nucleotides before the promoter; *GG* after the promoter is necessary for reasonable yields of *in vitro* transcription)
+- **T7 promoter**: ```aagc-TAATACGACTCACTATA-GG-``` (It's recommended to add 4 **random** nucleotides before the promoter; *GG* after the promoter is necessary for reasonable yields of *in vitro* transcription)
 - **Spacer**: ```20 bp``` sequence before PAM (it should be as close to the edited site as possible)
 - **Scaffold**: ```-GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC-``` (You **don't** need to change this unless you are changing to enzymes other than Cas9)
 - **RT** (reverse transcription template): no less than ```7 nt``` before the cutting site (5' to 3' direction); there is no strict resrtiction for the length of the RT, but you should try do make it as short as possible (the longer the DNA oligos/ultramers, the harder to make and the more expensive), usually RT within ```20 nt``` is good; **avoid** ```C``` at the 5' of RT (the 5' of RT is connected to the Scaffold, be careful with the direction); you may remove the ```PAM site``` with a synonymous variant if applicable; you may also introduce or remove a ```RE site``` with a synonymous variant if applicable
