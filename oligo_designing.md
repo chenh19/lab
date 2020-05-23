@@ -230,7 +230,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 - The secondary gRNAs should be ```40-90 bp``` away from the edited site
 - The secondary gRNAs only has **T7 promoter**, **spacer**, and **scaffold**, and don't have RT and PBS. They will only introduce a nick  and will not introduce any sequence changes
 - A complete example of pegRNA designing:
-![](fig/oligo-43.png)
+![](fig/oligo-44.png)
 
 > Note:
 >
