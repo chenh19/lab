@@ -59,7 +59,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 > Note:   
 > 
-> - You may first deign a primer within the Tm range and then check whether the length is with the range as well.
+> - You may first deign a primer within the Tm range and then check whether the length is with the range as well. If your Tm is wthin range but it's too long, you might need to select another spot.
 > - **GC%** is usually another specs mentioned in other tutorials, but if Tm and Length are within range, GC% will be good and you don't have to worry.  
 > - A set of primers can also amplify **single-strand DNA templates**. In the first cycle, only one primer will work, but once double-strand DNA template forms, both primers will work and amplify the double-strand DNA.
 > - If you are doing genotyping, please remeber to use the **genomic DNA maps** for primer designing, not the mRNA/cDNA maps.
@@ -209,7 +209,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 - **Spacer**: ```20 bp``` sequence before PAM (it should be as close to the edited site as possible)
 - **Scaffold**: ```-GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC-``` (You **don't** need to change this unless you are changing to enzymes other than Cas9)
 - **RT** (reverse transcription template): no less than ```7 nt``` before the cutting site (5' to 3' direction); there is no strict resrtiction for the length of the RT, but you should try do make it as short as possible (the longer the DNA oligos/ultramers, the harder to make and the more expensive), usually RT within ```20 nt``` is good; **avoid** ```C``` at the 5' of RT (the 5' of RT is connected to the Scaffold, be careful with the direction); you may remove the ```PAM site``` with a synonymous variant if applicable; you may also introduce or remove a ```RE site``` with a synonymous variant if applicable
-- **PBS** (primer binding site): ```8-15 nt``` after the cutting site (also 5' to 3' direction; if 8-15 nt is not easy to determine, check the Tm in SnapGene, ideally it should be ```40-45 °C```; PBS can anneal with the spacer, so when you can reach the Tm range, the **shorter** the PBS the better)
+- **PBS** (primer binding site): ```8-15 nt``` after the cutting site (also 5' to 3' direction; if 8-15 nt is not easy to determine, check the Tm in SnapGene, ideally it should be ```40-45 °C```; PBS can anneal with the spacer, so when you can reach the Tm range, the **shorter** the PBS the better; when you **can't** reach the Tm range, just use a 15 nt PBS)
 
 
 > Note:
