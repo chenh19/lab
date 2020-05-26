@@ -132,6 +132,8 @@ Although you can find varaint deleteriousness in online databases like GnomAD, y
 
 Your priority should always be protein prediction, if protein prediction is not applicable, such as splice varaints, you can do genome prediction instead.  
 
+Sometimes the results from different programs might discord, so you may save the deleteriousness predictions from each program. If the results accord, the predictions are more likely to be real.
+
 [**Provean Protein**](http://provean.jcvi.org/protein_batch_submit.php?species=human)
 - Use reference sequences starting with "NP_" for protein prediction as much as possible
 - If for one protein isoform there are multiple sequences labeled with "NP_", select the shorter one, which is usually the more canonical one
