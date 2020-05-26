@@ -216,7 +216,7 @@ Predict the structures of proteins with variants and compare them with wild type
 ![](fig/2-36.png)
 
 ## 7. Calculate odds ratio between variants and diseases
-Last but not least, you may calculate the [**odds ratio**](https://www.wikiwand.com/en/Odds_ratio) to see the association between the variants and specific diseases.
+Last but not least, you may calculate the [**odds ratio**](https://www.socscistatistics.com/biostatistics/default2.aspx) and the [**p value**](https://www.socscistatistics.com/tests/chisquare/default.aspx) to see the association between the variants and specific diseases.
 
 ## 8. Appendix
 - [**An online statistics calculator website**](https://www.socscistatistics.com/)
