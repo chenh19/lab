@@ -198,7 +198,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 ## 5. Prime editing gRNAs for variants knock-in
 - Another frequent application of CRISPR is variant knock-in. Still, you can use either plasmid or RNP. But RNP is preferred because single clones with SNP are relatively difficult to select in the mixed cell pool, and the higher efficiency provided by RNP can be helpful
-- There are many ways to introduce a variants. We currently use the tech coming out in 2019, which is called [Prime editing](https://doi.org/10.1038/s41586-019-1711-4) and uses **reverse transcription** and **mismatch repair** to introduce the variants. Traditional combination of [gRNAs and HDR repair templates](https://blog.addgene.org/crispr-101-homology-directed-repair) will not be discussed in this tutorial
+- There are many ways to introduce a variants. We currently use the technique coming out in 2019, which is called Prime editing and uses **reverse transcription** and **mismatch repair** to introduce the variants. If you need some background of this new technique, you may read [this article](https://doi.org/10.1038/s41586-019-1711-4). Traditional combination of [gRNAs and HDR repair templates](https://blog.addgene.org/crispr-101-homology-directed-repair) will not be discussed in this tutorial
 ![](fig/oligo-41.png)
 - Prime editing is relatively complicated but also very compact and high efficient. It doesn't use cell's HDR mechanism, but uses reverse transcription instead
 ![](fig/oligo-42.png)
