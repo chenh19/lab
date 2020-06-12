@@ -1,6 +1,6 @@
 # Preliminary *in silico* research for variants identified by NGS
 When you have filtered the variants from raw NGS data, you may find there are still too many of them and it's hard to decide which ones are more valuable for downstream experimental research. Therefore, you may do *in silico* research to get as much info about the variants as possible first.  
-*Current version: v1.0.4*
+*Current version: v1.0.5*
 
 #### Table
 1. [*Understand the basic variant info*](https://github.com/chenh19/lab_training/blob/master/in_silico_research.md#1-understand-the-basic-variant-info)
