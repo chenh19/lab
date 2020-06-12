@@ -221,8 +221,9 @@ Predict the structures of proteins with variants and compare them with wild type
 Last but not least, you may calculate the [**odds ratio**](https://www.socscistatistics.com/biostatistics/default2.aspx) and the [**p value**](https://www.socscistatistics.com/tests/chisquare/default.aspx) to see the association between the variants and specific diseases.
 
 ## 8. Appendix
+- [**Galaxy bioinfomatics platform**](https://usegalaxy.org/)
 - [**An online statistics calculator website**](https://www.socscistatistics.com/)
-- [**Sequence alignments**](https://molbiol-tools.ca/Alignments.htm)
+- [**An aggregate of bioinfomatics tools](https://molbiol-tools.ca/); [**Sequence alignments**](https://molbiol-tools.ca/Alignments.htm)
 
 - **Amino acids:**  
 ![](fig/aa-1.png)  
