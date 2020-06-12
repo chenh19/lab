@@ -223,7 +223,7 @@ Last but not least, you may calculate the [**odds ratio**](https://www.socscista
 ## 8. Appendix
 - [**Galaxy bioinfomatics platform**](https://usegalaxy.org/)
 - [**An online statistics calculator website**](https://www.socscistatistics.com/)
-- [**An aggregate of bioinfomatics tools**](https://molbiol-tools.ca/); [**Sequence alignments**](https://molbiol-tools.ca/Alignments.htm)
+- [**An aggregate of bioinfomatics tools**](https://molbiol-tools.ca/) [**(Sequence alignments)**](https://molbiol-tools.ca/Alignments.htm)
 
 - **Amino acids:**  
 ![](fig/aa-1.png)  
