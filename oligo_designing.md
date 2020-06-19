@@ -216,7 +216,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 >
 > - T7 promoter is only for *in vitro* transcription. If you are directly ordering RNA, you don't need it.
 > - Note that the cutting site of Cas9 nuclease/nickase is between the **3** and **4** nucleotides upstream of the PAM site. If the the first nucleotide of the PAM site is labeled as +1, the cutting site would be between -3 and -4 nucleotides (5' to 3' direction).
-> - Note that Cas9 H840A nickase cuts the **opposite** strand of the *NGG* strand.
+> - Note that Cas9 H840A nickase cuts the ***NGG* strand**.
 > - Spacer longer than 20 bp will **not** increase the affinity, therefore always use 20 bp. Don't worry about the Tm for spacers.
 > - When designing pegRNAs, the spacers near the edited sites might not have high scores in gRNA designing tools (e.g., [IDT CRISPR-Cas9 gRNA checker](https://www.idtdna.com/site/order/designtool/index/CRISPR_CUSTOM)), which is OK. Prime editing uses nickase and if it cut offsite, it will not introduce the variant because the PBS won't align.
 > - Although PAM is 3 nt long, it's not necessarily in frame with the amino acid coding. When you are trying to use synonymous variants to remove the PAM, make sure that your synonymous variants are not for the 3 nt PAM but for those in-frame amino acid codons.
