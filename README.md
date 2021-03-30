@@ -1,5 +1,5 @@
 #  Undergraduate students training plan
-**A general training pipeline for undergraduate students in [Braunstein Lab](http://www.braunstein.team/)**  
+**A general training pipeline for undergraduate students in [Braunstein Lab](https://www.braunstein.team/)**  
 *Current version: v1.0.4*
 
 ## Basics
