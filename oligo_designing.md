@@ -140,7 +140,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 ### ii. Sanger sequencing for large regions
 - To avoid false variants, use the overlapping design
-- Typically ```300-400 bp``` between the primes (non-overlapping region)
+- Typically ```500-600 bp``` between the primes (non-overlapping region)
 - The beginning and the end of each sequencing fragment should be overlapped by another sequencing fragment
 ![](fig/oligo-36.png)
 - Here is an example of sequencing results aligned to the template:
