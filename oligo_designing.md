@@ -7,7 +7,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 2. [*Primers for PCR*](https://github.com/chenh19/lab_training/blob/master/oligo_designing.md#2-primers-for-pcr)
 3. [*Primers for sequencing*](https://github.com/chenh19/lab_training/blob/master/oligo_designing.md#3-primers-for-sequencing)
 4. [*Guide RNAs for gene knock-out*](https://github.com/chenh19/lab_training/blob/master/oligo_designing.md#4-guide-rnas-for-gene-knock-out)
-5. [~~*Prime editing gRNAs for variants knock-in*~~ *to be updated*](https://github.com/chenh19/lab_training/blob/master/oligo_designing.md#5-prime-editing-grnas-for-variants-knock-in)
+5. [~~*Prime editing gRNAs for variants knock-in*~~ ***# to be updated***](https://github.com/chenh19/lab_training/blob/master/oligo_designing.md#5-prime-editing-grnas-for-variants-knock-in)
 6. [*Appendix*](https://github.com/chenh19/lab_training/blob/master/oligo_designing.md#6-appendix)
 
 
@@ -195,7 +195,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 > - *In vitro* transcription saves time because it skips the molecular cloning procedures.
 > - gRNA is still a type of RNA and is susceptible to RNases. **Capping** and **poly-A tailing** can significantly stabilize the gRNA and therefore increase the transfection efficiency.
 
-
+~~
 ## 5. Prime editing gRNAs for variants knock-in
 - Another frequent application of CRISPR is variant knock-in. Still, you can use either plasmid or RNP. But RNP is preferred because single clones with SNP are relatively difficult to select in the mixed cell pool, and the higher efficiency provided by RNP can be helpful
 - There are many ways to introduce a variants. We currently use the technique coming out in 2019, which is called Prime editing and uses **reverse transcription** and **mismatch repair** to introduce the variants. If you need some background of this new technique, you may read [this article](https://doi.org/10.1038/s41586-019-1711-4). Traditional combination of [gRNAs and HDR repair templates](https://blog.addgene.org/crispr-101-homology-directed-repair) will not be discussed in this tutorial
@@ -235,6 +235,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 > Note:
 >
 > - In this example, the genotyping primers are designed with the principles for the primers for regular PCR and they cover a region of ~500 bp.
+~~
 
 ## 6. Appendix
 - Calculate molecular weight by sequence: [Calculator-1](http://molbiol.edu.ru/eng/scripts/01_07.html), [Calculator-2](https://www.bioinformatics.org/sms2/dna_mw.html)
