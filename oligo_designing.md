@@ -195,8 +195,9 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 > - *In vitro* transcription saves time because it skips the molecular cloning procedures.
 > - gRNA is still a type of RNA and is susceptible to RNases. **Capping** and **poly-A tailing** can significantly stabilize the gRNA and therefore increase the transfection efficiency.
 
-~~
-## 5. Prime editing gRNAs for variants knock-in
+
+## 5. Prime editing gRNAs for variants knock-in (**to be updated**)
+```
 - Another frequent application of CRISPR is variant knock-in. Still, you can use either plasmid or RNP. But RNP is preferred because single clones with SNP are relatively difficult to select in the mixed cell pool, and the higher efficiency provided by RNP can be helpful
 - There are many ways to introduce a variants. We currently use the technique coming out in 2019, which is called Prime editing and uses **reverse transcription** and **mismatch repair** to introduce the variants. If you need some background of this new technique, you may read [this article](https://doi.org/10.1038/s41586-019-1711-4). Traditional combination of [gRNAs and HDR repair templates](https://blog.addgene.org/crispr-101-homology-directed-repair) will not be discussed in this tutorial
 ![](fig/oligo-41.png)
@@ -235,7 +236,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 > Note:
 >
 > - In this example, the genotyping primers are designed with the principles for the primers for regular PCR and they cover a region of ~500 bp.
-~~
+```
 
 ## 6. Appendix
 - Calculate molecular weight by sequence: [Calculator-1](http://molbiol.edu.ru/eng/scripts/01_07.html), [Calculator-2](https://www.bioinformatics.org/sms2/dna_mw.html)
