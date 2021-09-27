@@ -59,7 +59,7 @@ This tutorial focuses only on the designing of DNA oligos, which is mostly based
 
 > Note:   
 > 
-> - You may first deign a primer within the Tm range and then check whether the length is with the range as well. If your Tm is wthin range but it's too long, you might need to select another spot.
+> - You may first deign a primer within the Tm range and then check whether the length is within the range as well. If your Tm is wthin range but it's too long, you might need to select another spot.
 > - **GC%** is usually another specs mentioned in other tutorials, but if Tm and Length are within range, GC% will be good and you don't have to worry.  
 > - A set of primers can also amplify **single-strand DNA templates**. In the first cycle, only one primer will work, but once double-strand DNA template forms, both primers will work and amplify the double-strand DNA.
 > - If you are doing genotyping, please remeber to use the **genomic DNA maps** for primer designing, not the mRNA/cDNA maps.
