@@ -1,5 +1,5 @@
 #  Undergraduate students training plan
-**A general training pipeline for undergraduate students**  
+**A general training pipeline for undergraduate students.**  
 *Current version: v1.0.4 (**will require a comprehensive update)*
 
 ## Basics
