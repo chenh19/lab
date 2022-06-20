@@ -1,6 +1,6 @@
 #  Undergraduate students training plan
 **A general training pipeline for undergraduate students.**  
-*Current version: v1.0.4 (**will require a comprehensive update)*
+*Current version: v1.0.4 (**will require a comprehensive update**)*
 
 ## Basics
 *Each basic steps takes around 2 weeks (assuming the student comes twice a week)*
